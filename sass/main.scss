@@ -10,12 +10,19 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+// COLORS
+
+$dark-tiel: #005f6b;
+$tiel: #008b9d;
+$bright-tiel: #00defb;
+$orange: #ff7a00;
+
 html,
 button,
 input,
 select,
 textarea {
-    color: #222;
+    color: $tiel;
 }
 
 html,body
@@ -28,9 +35,8 @@ html,body
 }
 
 body {
-    font-size: 1.5em;
     line-height: 2;
-    color: #999;    
+    color: $tiel;    
 }
 
 
@@ -124,22 +130,25 @@ textarea {
 
 }
 
+
+
 html {
     background-image:url('../img/bkg.jpg');
-    font-size: 14px;
+    
 }
 
 body {
     background-image:url('../img/bkg.jpg');
+    font-size: 14px;
+    color: $tiel;
 }
 
 
-// COLORS
+// GLOBAL
 
-$dark-tiel: #005f6b;
-$tiel: #008b9d;
-$bright-tiel: #00defb;
-$orange: #ff7a00;
+.container {
+    max-width: 940px;
+}
 
 
 // TYPOGRAPHY
@@ -152,138 +161,58 @@ h3 {
     font-family: 'Roboto', sans-serif;
 }
 
-header {
-    // background: url(../img/bkg-header.jpg) no-repeat center center fixed; 
-    // -webkit-background-size: cover;
-    // -moz-background-size: cover;
-    // -o-background-size: cover;
-    // background-size: cover;
-    padding-top: 160px;
-    padding-bottom: 190px;
+
+// NAV BAR
+
+.navbar-default {
+    background-color: transparent;
+    border: 0;
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    
 }
 
-.header-bkg {
-    background: url(../img/bkg-header.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.navbar {
+    margin: 10px 0;
 }
 
-#vid-bkg {
-    height: 600px;
+.navbar-default .navbar-nav>li>a {
+    color: $tiel;
 }
 
-header img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.navbar-nav.navbar-right:last-child {
+    margin-right: 0;
 }
 
-.logo {
-    margin-bottom: 20px;
-    @include breakpoint(mobile){
-      width: 90%;
-    }
+// MAIN CONTENT
+
+.main-body {
+    background-color: white;
+    @include border-radius(8px);
+    border: 1px solid #ddd;
+    padding: 30px;
 }
 
-.arrow {
-    margin-top: 230px;
+
+// DASHBOARD
+
+.dashboard-module h3 {
+    font-family: 'Roboto Slab', serif;
+    color: $dark-tiel;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
-.tagline {
-  -webkit-animation-duration: 3.6s;
-  margin-bottom: 20px;
-    @include breakpoint(mobile){
-      width: 90%;
-    }
+span.header-icon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
 }
 
-.mail {
-    -webkit-animation-delay: 1.5s;
-    position: fixed;
-    top: 20px;
-    right: 40px;
-    @include breakpoint(mobile){
-      right: 20px;
-    }
-    @include box-shadow(0 0 2px rgba(0,0,0,.4));
+.appt-icon {
+    background-image: url("../img/calendar-icon.png");
 }
-
-.quote-container {
-    text-align: center;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    background: url(../img/bono-bkg.jpg) no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.quote-container h2 {
-    color: #ccc;
-    font-size: 36px;
-    @include text-shadow(0 1px 2px #000);
-    margin-top: 14px;
-    opacity: 0;
-    @include breakpoint(mobile){
-      font-size: 24px;
-      width: 90%;
-    }
-}
-
-h2.quote-src {
-    font-style: italic;
-    opacity: 0;
-}
-
-.quote-container img {
-    margin-top: 12px;
-    opacity: 0;
-}
-
-li {
-    list-style: none;
-}
-
-ul.work-group {
-    padding: 0;
-}
-
-.mail { -webkit-transition: all .2s ease-in-out; }
-.mail:hover { -webkit-transform: scale(1.3); }
-
-
-
-// WORK SECTION
-
-#work-container {
-    padding-top: 30px;
-}
-
-.work-group {
-    margin: 0 auto;
-}
-
-#work-container .item1 {
-  margin-bottom: 30px;
-}
-
-.work-group img {
-    @include box-shadow(0 0 6px rgba(0,0,0,.4));
-}
-
-// FOOTER
-
-footer {
-    margin-bottom: 40px;
-}
-
-footer h3 {
-    text-align: center;
-}
-
 
 
 /* ==========================================================================
