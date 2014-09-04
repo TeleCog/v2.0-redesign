@@ -119,40 +119,7 @@ body {
   max-width: 940px;
 }
 
-/* line 156, ../../sass/main.scss */
-h1, h2 {
-  font-family: 'Roboto Slab', serif;
-}
-
-/* line 160, ../../sass/main.scss */
-h3 {
-  font-family: 'Roboto', sans-serif;
-}
-
-/* line 167, ../../sass/main.scss */
-.navbar-default {
-  background-color: transparent;
-  border: 0;
-  font-family: 'Roboto Slab', serif;
-  text-transform: uppercase;
-}
-
-/* line 175, ../../sass/main.scss */
-.navbar {
-  margin: 10px 0;
-}
-
-/* line 179, ../../sass/main.scss */
-.navbar-default .navbar-nav > li > a {
-  color: #008b9d;
-}
-
-/* line 183, ../../sass/main.scss */
-.navbar-nav.navbar-right:last-child {
-  margin-right: 0;
-}
-
-/* line 189, ../../sass/main.scss */
+/* line 153, ../../sass/main.scss */
 .main-body {
   background-color: white;
   -webkit-border-radius: 8px;
@@ -161,28 +128,248 @@ h3 {
   -o-border-radius: 8px;
   border-radius: 8px;
   border: 1px solid #ddd;
-  padding: 30px;
+  padding: 50px;
 }
 
-/* line 199, ../../sass/main.scss */
-.dashboard-module h3 {
+/* line 160, ../../sass/main.scss */
+ul {
+  list-style-type: none;
+}
+
+/* line 163, ../../sass/main.scss */
+a {
+  color: #008b9d;
+}
+
+/* line 169, ../../sass/main.scss */
+h1, h2 {
   font-family: 'Roboto Slab', serif;
-  color: #005f6b;
+}
+
+/* line 173, ../../sass/main.scss */
+h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 180, ../../sass/main.scss */
+.btn {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
   text-transform: uppercase;
-  font-size: 1.3em;
-  font-weight: bold;
+  font-weight: 900;
+}
+
+/* line 186, ../../sass/main.scss */
+.btn-primary {
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(0, 0, 0, 0.03)), color-stop(100%, rgba(255, 255, 255, 0.03)));
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.03) 0%, rgba(255, 255, 255, 0.03) 100%);
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.03) 0%, rgba(255, 255, 255, 0.03) 100%);
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.03) 0%, rgba(255, 255, 255, 0.03) 100%);
+  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.03) 0%, rgba(255, 255, 255, 0.03) 100%);
+  border: 1px solid #00defb;
+  color: #00defb;
+}
+
+/* line 193, ../../sass/main.scss */
+.btn-primary:hover {
+  background-color: #00defb;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(0, 0, 0, 0.03)), color-stop(100%, rgba(255, 255, 255, 0.03)));
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.03) 0%, rgba(255, 255, 255, 0.03) 100%);
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.03) 0%, rgba(255, 255, 255, 0.03) 100%);
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.03) 0%, rgba(255, 255, 255, 0.03) 100%);
+  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.03) 0%, rgba(255, 255, 255, 0.03) 100%);
+  border: 1px solid #00defb;
+  color: #fff;
+}
+
+/* line 200, ../../sass/main.scss */
+a.message-btn.btn {
+  font-size: 14px;
+  line-height: 26px;
 }
 
 /* line 207, ../../sass/main.scss */
-span.header-icon {
-  width: 30px;
-  height: 30px;
+.navbar-default {
+  background-color: transparent;
+  border: 0;
+  font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
+}
+
+/* line 215, ../../sass/main.scss */
+.navbar {
+  margin: 10px 0;
+}
+
+/* line 219, ../../sass/main.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #008b9d;
+}
+
+/* line 223, ../../sass/main.scss */
+.navbar-nav.navbar-right:last-child {
+  margin-right: 0;
+}
+
+/* line 230, ../../sass/main.scss */
+.dashboard-container {
+  padding-top: 16px;
+}
+
+/* line 234, ../../sass/main.scss */
+.dashboard-module {
+  margin-bottom: 50px;
+}
+
+/* line 238, ../../sass/main.scss */
+.dashboard-module h3 {
+  font-family: 'Roboto Slab', serif;
+  color: #008b9d;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-left: 44px;
+  line-height: 40px;
+}
+
+/* line 248, ../../sass/main.scss */
+h3.appt-header {
+  background: url("../img/calendar-icon.png") 0 center no-repeat;
+}
+
+/* line 252, ../../sass/main.scss */
+h3.hired-header {
+  background: url("../img/user-list-icon.png") 0 center no-repeat;
+}
+
+/* line 256, ../../sass/main.scss */
+h3.docs-header {
+  background: url("../img/docs-icon.png") 0 center no-repeat;
+}
+
+/* line 260, ../../sass/main.scss */
+h3.messages-header {
+  background: url("../img/messages-icon.png") 0 center no-repeat;
+}
+
+/* line 264, ../../sass/main.scss */
+.dashboard-module ul {
+  padding: 0;
+}
+
+/* line 268, ../../sass/main.scss */
+.appt-module .row, .hired-module .row, .doc-module .row {
+  line-height: 86px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+/* line 275, ../../sass/main.scss */
+.dashboard-module .user-img {
+  margin-right: 10px;
+}
+
+/* line 279, ../../sass/main.scss */
+.dashboard-module header {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+/* line 284, ../../sass/main.scss */
+.appt-time, .appt-channel, .status {
+  padding-left: 44px;
   display: inline-block;
 }
 
-/* line 213, ../../sass/main.scss */
-.appt-icon {
-  background-image: url("../img/calendar-icon.png");
+/* line 289, ../../sass/main.scss */
+.appt-time {
+  background: url("../img/clock-icon.png") 0 center no-repeat;
+}
+
+/* line 293, ../../sass/main.scss */
+.appt-channel.phone {
+  background: url("../img/phone-icon.png") 0 center no-repeat;
+}
+
+/* line 297, ../../sass/main.scss */
+.appt-channel.video {
+  background: url("../img/video-icon.png") 0 center no-repeat;
+}
+
+/* line 301, ../../sass/main.scss */
+.status {
+  background: url("../img/status-icon.png") 0 center no-repeat;
+}
+
+/* line 306, ../../sass/main.scss */
+.dashboard-container .btn-primary {
+  width: 120px;
+  height: 40px;
+}
+
+/* line 311, ../../sass/main.scss */
+.dashboard-module .btn-primary {
+  margin-top: 12px;
+}
+
+/* line 315, ../../sass/main.scss */
+.dashboard-module a {
+  font-size: 10px;
+}
+
+/* line 319, ../../sass/main.scss */
+a.reschedule, a.cancel, a.provider-phone {
+  position: absolute;
+  top: 26px;
+}
+
+/* line 324, ../../sass/main.scss */
+a.reschedule {
+  right: 80px;
+}
+
+/* line 328, ../../sass/main.scss */
+a.cancel {
+  right: 22px;
+}
+
+/* line 332, ../../sass/main.scss */
+a.provider-phone {
+  right: 44px;
+}
+
+/* line 336, ../../sass/main.scss */
+.doc-name {
+  display: block;
+  line-height: 18px;
+  color: #999;
+}
+
+/* line 342, ../../sass/main.scss */
+.doc-name.uploaded {
+  color: #008b9d;
+}
+
+/* line 346, ../../sass/main.scss */
+.doc-module .row {
+  text-align: center;
+}
+
+/* line 354, ../../sass/main.scss */
+.user-img {
+  width: 66px;
+  height: 66px;
+  border: 1px solid #008b9d;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
 }
 
 /* ==========================================================================
@@ -191,7 +378,7 @@ span.header-icon {
 /*
  * Image replacement
  */
-/* line 226, ../../sass/main.scss */
+/* line 370, ../../sass/main.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -200,7 +387,7 @@ span.header-icon {
   *text-indent: -9999px;
 }
 
-/* line 234, ../../sass/main.scss */
+/* line 378, ../../sass/main.scss */
 .ir:before {
   content: "";
   display: block;
@@ -211,7 +398,7 @@ span.header-icon {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 245, ../../sass/main.scss */
+/* line 389, ../../sass/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -220,7 +407,7 @@ span.header-icon {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 254, ../../sass/main.scss */
+/* line 398, ../../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -236,7 +423,7 @@ span.header-icon {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 271, ../../sass/main.scss */
+/* line 415, ../../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -250,7 +437,7 @@ span.header-icon {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 284, ../../sass/main.scss */
+/* line 428, ../../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -266,7 +453,7 @@ span.header-icon {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 301, ../../sass/main.scss */
+/* line 445, ../../sass/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -275,7 +462,7 @@ span.header-icon {
   /* 2 */
 }
 
-/* line 306, ../../sass/main.scss */
+/* line 450, ../../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -284,7 +471,7 @@ span.header-icon {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 315, ../../sass/main.scss */
+/* line 459, ../../sass/main.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -305,7 +492,7 @@ span.header-icon {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 342, ../../sass/main.scss */
+  /* line 486, ../../sass/main.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -314,18 +501,18 @@ span.header-icon {
     text-shadow: none !important;
   }
 
-  /* line 350, ../../sass/main.scss */
+  /* line 494, ../../sass/main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 354, ../../sass/main.scss */
+  /* line 498, ../../sass/main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 358, ../../sass/main.scss */
+  /* line 502, ../../sass/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -333,33 +520,33 @@ span.header-icon {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 368, ../../sass/main.scss */
+  /* line 512, ../../sass/main.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 373, ../../sass/main.scss */
+  /* line 517, ../../sass/main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 378, ../../sass/main.scss */
+  /* line 522, ../../sass/main.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 383, ../../sass/main.scss */
+  /* line 527, ../../sass/main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 387, ../../sass/main.scss */
+  /* line 531, ../../sass/main.scss */
   img {
     max-width: 100% !important;
   }
@@ -368,7 +555,7 @@ span.header-icon {
     margin: 0.5cm;
 }
 
-  /* line 397, ../../sass/main.scss */
+  /* line 541, ../../sass/main.scss */
   p,
   h2,
   h3 {
@@ -376,7 +563,7 @@ span.header-icon {
     widows: 3;
   }
 
-  /* line 403, ../../sass/main.scss */
+  /* line 547, ../../sass/main.scss */
   h2,
   h3 {
     page-break-after: avoid;

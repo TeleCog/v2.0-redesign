@@ -102,7 +102,7 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">LiveWire</a>
+                <a class="navbar-brand" href="#"><img src="static/img/logo.png"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -121,121 +121,194 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
     <!-- END MAIN MAV -->
 
 
+    <!-- MAIN BODY START -->
 
-    <div class="main-body" ><!-- Main Body Start -->
-        <div class="container">
-            <div class="body-container-new fix row dashboard-module" id="render_resources">
-                <header>
-                    <span class="header-icon appt-icon"></span>
-                    <h3> Appoinments </h3>
-                </header>
-                <table class="col-md-12">
-                    <tr>
-                        <td>Nate Lassiter</td>
-                        <td>2014-09-16 15:30:00 UTC</td>
+    <div class="main-body body-container-new dashboard-container" id="render_resources">
 
-                        <td>By phone</td>
-                        <td><a class="" href="/providers/7/free_consultation">reschedule</a></td>
-                        <td><a href="/providers/7/hire">Hire</a></td>
+        <!-- APPOINTMENT MODULE -->
 
-                        <td>
-                            <a class="" href="/providers/14/cancel">cancel</a>
-                        </td>
-                    </tr>
+        <div class="dashboard-module appt-module" >
+            <header>
+                <h3 class="appt-header">Appoinments</h3>
+            </header>
+            <div class="row">
+                <ul>
+                    <li class="col-sm-4">
+                        <img src="static/img/user1.png" class="user-img">
+                        <span class="user-name">Arman Bajwa</span>
+                    </li>
+                    <li class="col-sm-3">
+                        <span class="appt-time">Tues, Dec. 28th</span>
+                    </li>
+                    <li class="col-sm-2">
+                        <img src="">
+                        <span class="appt-channel phone">By Phone</span> <!-- ADD CLASS PHONE OR VIDEO DEPENDING ON CHANNEL SELECTED BY USER -->
+                    </li>
+                    <li class="col-sm-3">
+                        <button type="button" class="btn btn-primary pull-right">Hire</button>
+                        <a class="reschedule" href="/providers/7/free_consultation">reschedule</a>
+                        <a class="cancel" href="/providers/7/free_consultation">cancel</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <li class="col-sm-4">
+                        <img src="static/img/user2.png" class="user-img">
+                        <span class="user-name">Dr. Aasim Saeed</span>
+                    </li>
+                    <li class="col-sm-3">
+                        <span class="appt-time">Wed, Dec. 29th</span>
+                    </li>
+                    <li class="col-sm-2">
+                        <img src="">
+                        <span class="appt-channel video">By Video</span> <!-- ADD CLASS PHONE OR VIDEO DEPENDING ON CHANNEL SELECTED BY USER -->
+                    </li>
+                    <li class="col-sm-3">
+                        <button type="button" class="btn btn-primary pull-right">Hire</button>
+                        <a class="reschedule" href="/providers/7/free_consultation">reschedule</a>
+                        <a class="cancel" href="/providers/7/free_consultation">cancel</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
 
-                </table>
-                <br/>
-                <br/>
-                <br/>
-                <h3> Hired Financial Professionals</h3>
-                <table class="col-md-12">
-                    <tr>
-                        <td>Name</td>
-                        <td>Tax Type</td>
-                        <td>Message</td>
-                    </tr>
-                    <tr>
-                        <td>Nate Lassiter</td>
-                        <td></td> 
-                        <td><a class="btn btn-primary" href="/chat_histories?provider=7"
-                            title="Message" data-remote="true" data-name="Nate Lassiter"
-                            data-available="false" data-id="7">
-                            Message
-                        </a>
-                    </td>
-                </tr>
-            </table>
-            <h3> Documents </h3>
-            <div class="col-md-12">
-                <form accept-charset="UTF-8" action="/documents?customer_id=9" enctype="multipart/form-data" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="DjAiyvavOVqZ2qqR6rxTwXKKSpRidYzMevXXAbp6Zmc=" /></div>
-                    <input id="dropAttachment" name="dropAttachment" type="hidden" />
-                    <input id="dropAttachmentName" name="dropAttachmentName" type="hidden" />
-                    <input id="customer_upload" name="customer_upload" type="hidden" value="true" />
-                    <div class="blue">
-                        <span class="fileinput-button">
-                            <span class="upload-top-span" style="margin:0;">
-                                <img src="/assets/img/upload.png" /> Upload
-                            </span>
-                            <input class="upload-attachment" id="attachment" multiple="multiple" name="attachment[]" type="file" />
-                        </span>
-                    </div>
-                </form> <br/>
-                <br/>
-                <br/>
-                <br/>
-                <div class="col-md-12">
-                    <h3> Documents Requested by Financial Professional </h3>
-                    <div class= "col-md-4">
-                        <form accept-charset="UTF-8" action="/documents?customer_id=9" enctype="multipart/form-data" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="DjAiyvavOVqZ2qqR6rxTwXKKSpRidYzMevXXAbp6Zmc=" /></div>
+
+        <!-- HIRED MODULE -->
+
+        <div class="dashboard-module hired-module" >
+            <header>
+                <h3 class="hired-header">Financial Professionals</h3>
+            </header>
+            <div class="row">
+                <ul>
+                    <li class="col-sm-4">
+                        <img src="static/img/user1.png" class="user-img">
+                        <span class="user-name">Arman Bajwa</span>
+                    </li>
+                    <li class="col-sm-3">
+                        <span class="status">Taxes in progress</span>
+                    </li>
+                    <li class="col-sm-5">
+                        <a class="btn btn-primary pull-right message-btn" href="/chat_histories?provider=7" title="Message" data-remote="true" data-name="Nate Lassiter" data-available="false" data-id="7">Message</a>
+                        <a class="provider-phone" href="/providers/7/free_consultation">954-560-3576</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <!-- DOCS MODULE -->
+
+        <div class="dashboard-module doc-module" >
+            <header>
+                <h3 class="docs-header">Documents</h3>
+            </header>
+            <div class="row">
+                <ul>
+                    <li class="col-sm-2 col-xs-6">
+                        <img src="static/img/user1.png" class="user-img">
+                    </li>
+                    <li class="col-sm-2 col-xs-6">
+                        <form accept-charset="UTF-8" action="/documents?customer_id=9" enctype="multipart/form-data" method="post">
+                            <div style="margin:0;padding:0;display:inline">
+                                <input name="utf8" type="hidden" value="&#x2713;" />
+                                <input name="authenticity_token" type="hidden" value="DjAiyvavOVqZ2qqR6rxTwXKKSpRidYzMevXXAbp6Zmc=" />
+                            </div>
                             <input id="dropAttachment" name="dropAttachment" type="hidden" />
                             <input id="dropAttachmentName" name="dropAttachmentName" type="hidden" />
                             <input id="dashboard" name="dashboard" type="hidden" value="true" />
                             <input id="request_id" name="request_id" type="hidden" value="7" />
-                            <div>
-                                <label for="W9">W9</label>
-                                <input class="upload-attachment" id="attachment" multiple="multiple" name="attachment[]" type="file" />
-                            </div>
-                        </form>     </div>
-                    </div>
+                            <input class="upload-attachment" id="attachment" multiple="multiple" name="attachment[]" type="file" />
+                            <label for="W9" class="doc-name ">W9</label>
+                        </form>   
+                    </li>
+                    <li class="col-sm-2 col-xs-6">
+                        <img src="static/img/doc-not-uploaded.png" class="">
+                        <span class="doc-name ">W9</span>
+                    </li>
+                    <li class="col-sm-2 col-xs-6">
+                        <img src="static/img/doc-uploaded.png" class="">
+                        <span class="doc-name uploaded">Income Statment</span>    <!-- ADD CLASS "UPLOADED" WHEN DOC HAS BEEN UPLOADED -->
+                    </li>
+                    <li class="col-sm-2 col-xs-6">
+                        <img src="static/img/new-doc.png" class="">
+                        <span class="doc-name">New Doc</span>  
+                    </li>
+                </ul>
+            </div>
+        </div>
 
+
+
+        <h3> Documents </h3>
+        <div class="col-md-12">
+            <form accept-charset="UTF-8" action="/documents?customer_id=9" enctype="multipart/form-data" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="DjAiyvavOVqZ2qqR6rxTwXKKSpRidYzMevXXAbp6Zmc=" /></div>
+                <input id="dropAttachment" name="dropAttachment" type="hidden" />
+                <input id="dropAttachmentName" name="dropAttachmentName" type="hidden" />
+                <input id="customer_upload" name="customer_upload" type="hidden" value="true" />
+                <div class="blue">
+                    <span class="fileinput-button">
+                        <span class="upload-top-span" style="margin:0;">
+                            <img src="/assets/img/upload.png" /> Upload
+                        </span>
+                        <input class="upload-attachment" id="attachment" multiple="multiple" name="attachment[]" type="file" />
+                    </span>
+                </div>
+            </form> <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div class="col-md-12">
+                <h3> Documents Requested by Financial Professional </h3>
+                <div class= "col-md-4">
+                    <form accept-charset="UTF-8" action="/documents?customer_id=9" enctype="multipart/form-data" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="DjAiyvavOVqZ2qqR6rxTwXKKSpRidYzMevXXAbp6Zmc=" /></div>
+                        <input id="dropAttachment" name="dropAttachment" type="hidden" />
+                        <input id="dropAttachmentName" name="dropAttachmentName" type="hidden" />
+                        <input id="dashboard" name="dashboard" type="hidden" value="true" />
+                        <input id="request_id" name="request_id" type="hidden" value="7" />
+                        <div>
+                            <label for="W9">W9</label>
+                            <input class="upload-attachment" id="attachment" multiple="multiple" name="attachment[]" type="file" />
+                        </div>
+                    </form>     
 
                 </div>
-                <div class="col-md-12">
-                    <br/>
-                    <h3>Messages</h3>
-                    <div class="col-md-4">
-                        Nate Lassiter
-                    </div>
-                    <div class="col-md-6">
-                        hi there how are you
-                    </div>
-                    <div class="col-md-2">
-                        2014-09-02 21:59:46 UTC
-                    </div>
-                    <br/>
                 </div>
-    <!-- <div class="blue">
-    <span class="fileinput-button">
-    <span class="upload-top-span" style="margin:0;">
-    <img src="/assets/img/upload.png" /> Upload
-    </span>
-    </span>
-    </div> -->
-    <!--  -->
-
-    <script type="text/javascript">
-    $( document ).ready(function() {
-        $("#top_navigation").hide();
-    // $("#second_navigation").hide();
-    });
-    </script>
 
 
-    <!-- </div> -->
-    </div>  
-    </div>
+            </div>
+
+
+            <div class="col-md-12">
+                <br/>
+                <h3>Messages</h3>
+                <div class="col-md-4">
+                    Nate Lassiter
+                </div>
+                <div class="col-md-6">
+                    hi there how are you
+                </div>
+                <div class="col-md-2">
+                    2014-09-02 21:59:46 UTC
+                </div>
+                <br/>
+
+
+<script type="text/javascript">
+$( document ).ready(function() {
+    $("#top_navigation").hide();
+// $("#second_navigation").hide();
+});
+</script>
+
+
+        </div>  
     </div><!-- Main Body End -->
+
+
     <div class="col-md-12 col-lg-12"><!-- right part bottom (chat) -->  
         <div class="chat_container clearfix zoom-reset">
             <div class="chat-stack clearfix">
