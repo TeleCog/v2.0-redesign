@@ -16,6 +16,7 @@ $dark-tiel: #005f6b;
 $tiel: #008b9d;
 $bright-tiel: #00defb;
 $orange: #ff7a00;
+$grey: #999;
 
 html,
 button,
@@ -119,10 +120,10 @@ textarea {
 
 @mixin breakpoint($point) {
   @if $point == mobile {
-    @media (max-width: 767px)  { @content; }
+    @media (max-width: 768px)  { @content; }
   }
   @else if $point == large {
-    @media (max-width: 995px) { @content; }
+    @media (max-width: 992px) { @content; }
   }
   @else if $point == x-large {
     @media (min-width: 1024px) { @content; }
@@ -225,6 +226,21 @@ a.message-btn.btn {
 }
 
 
+// USER STYLES
+
+.user-img {
+    width: 66px;
+    height: 66px;
+    border: 1px solid #008b9d;
+    @include border-radius(50px);
+    @include breakpoint(mobile){
+        width: 32px;
+        height: 32px;
+    }
+}
+
+
+
 // DASHBOARD
 
 .dashboard-container {
@@ -261,15 +277,29 @@ h3.messages-header {
     background: url("../img/messages-icon.png") 0 center no-repeat;
 }
 
+h3.docs-header {
+    display: inline-block;
+}
+
+.doc-count {
+    margin-left: 30px;
+}
+
 .dashboard-module ul {
     padding: 0;
 }
 
-.appt-module .row,  .hired-module .row, .doc-module .row {
+.appt-module .row,  .hired-module .row, .doc-module .row, .messages-module .row {
     line-height: 86px;
     margin-bottom: 20px;
     border-bottom: 1px solid #eee;
-    padding-bottom: 20px;
+    padding-bottom: 20px; 
+}
+
+.appt-module .row, .hired-module .row {
+    @include breakpoint(mobile){
+        line-height: 56px;
+    }
 }
 
 .dashboard-module .user-img {
@@ -310,27 +340,44 @@ h3.messages-header {
 
 .dashboard-module .btn-primary {
     margin-top: 12px;
-}
-
-.dashboard-module a {
-    font-size: 10px;
+    @include breakpoint(large){
+        float: left!important;
+        margin-top: 4px;
+    }
 }
 
 a.reschedule, a.cancel, a.provider-phone {
     position: absolute;
     top: 26px;
+    font-size: 10px;
+    @include breakpoint(large){
+        top: -20px;
+        @include breakpoint(mobile){
+        top: -6px;
+        }
+    }
 }
+    
 
 a.reschedule {
     right: 80px;
+    @include breakpoint(large){
+        left: 146px;
+    }
 }
 
 a.cancel {
     right: 22px;
+    @include breakpoint(large){
+        left: 206px;
+    }
 }
 
 a.provider-phone {
     right: 44px;
+    @include breakpoint(large){
+        left: 146px;
+    }
 }
 
 .doc-name {
@@ -347,16 +394,29 @@ a.provider-phone {
     text-align: center;
 }
 
-
-
-// USER STYLES
-
-.user-img {
-    width: 66px;
-    height: 66px;
-    border: 1px solid #008b9d;
-    @include border-radius(50px);
+.doc-module .user-img {
+    @include breakpoint(mobile){
+        width: 66px;
+        height: 66px;
+    }
 }
+
+.message-content-container {
+    line-height: 1.5em;
+    padding-top: 34px;
+    padding-right: 20px;
+    overflow: hidden;
+    max-height: 100px;
+}
+
+.message-time {
+    color: $grey;
+}
+
+.message-unread {
+    font-weight: 900;
+}
+
 
 
 /* ==========================================================================
