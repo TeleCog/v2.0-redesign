@@ -219,26 +219,12 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                         <img src="static/img/user1.png" class="user-img">
                     </li>
                     <li class="col-sm-2 col-xs-6">
-                        <form accept-charset="UTF-8" action="/documents?customer_id=9" enctype="multipart/form-data" method="post">
-                            <div style="margin:0;padding:0;display:inline">
-                                <input name="utf8" type="hidden" value="&#x2713;" />
-                                <input name="authenticity_token" type="hidden" value="DjAiyvavOVqZ2qqR6rxTwXKKSpRidYzMevXXAbp6Zmc=" />
-                            </div>
-                            <input id="dropAttachment" name="dropAttachment" type="hidden" />
-                            <input id="dropAttachmentName" name="dropAttachmentName" type="hidden" />
-                            <input id="dashboard" name="dashboard" type="hidden" value="true" />
-                            <input id="request_id" name="request_id" type="hidden" value="7" />
-                            <input class="upload-attachment" id="attachment" multiple="multiple" name="attachment[]" type="file" />
-                            <label for="W9" class="doc-name ">W9</label>
-                        </form>   
-                    </li>
-                    <li class="col-sm-2 col-xs-6">
-                        <img src="static/img/doc-not-uploaded.png" class="">
+                        <span class="doc-not-uploaded"></span>  <!-- ADD CLASS "DOC-NOT-UPLOADED" TO DOC THAT HAVENT BEEN UPLOADED -->
                         <span class="doc-name ">W9</span>
                     </li>
                     <li class="col-sm-2 col-xs-6">
-                        <img src="static/img/doc-uploaded.png" class="">
-                        <span class="doc-name uploaded">Income Statment</span>    <!-- ADD CLASS "UPLOADED" WHEN DOC HAS BEEN UPLOADED -->
+                        <span class="doc-uploaded"></span>  <!-- ADD CLASS "DOC-UPLOADED" TO DOC THAT HAVENT BEEN UPLOADED -->
+                        <span class="doc-name ">W9</span>
                     </li>
                     <li class="col-sm-2 col-xs-6">
                         <img src="static/img/new-doc.png" class="">

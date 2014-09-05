@@ -254,43 +254,56 @@ a.message-btn.btn {
   padding-left: 44px;
   line-height: 40px;
 }
+@media (max-width: 768px) {
+  /* line 254, ../../sass/main.scss */
+  .dashboard-module h3 {
+    line-height: 30px;
+  }
+}
 
-/* line 264, ../../sass/main.scss */
+/* line 267, ../../sass/main.scss */
 h3.appt-header {
   background: url("../img/calendar-icon.png") 0 center no-repeat;
 }
 
-/* line 268, ../../sass/main.scss */
+/* line 271, ../../sass/main.scss */
 h3.hired-header {
   background: url("../img/user-list-icon.png") 0 center no-repeat;
 }
 
-/* line 272, ../../sass/main.scss */
+/* line 275, ../../sass/main.scss */
 h3.docs-header {
   background: url("../img/docs-icon.png") 0 center no-repeat;
 }
 
-/* line 276, ../../sass/main.scss */
+/* line 279, ../../sass/main.scss */
 h3.messages-header {
   background: url("../img/messages-icon.png") 0 center no-repeat;
 }
 
-/* line 280, ../../sass/main.scss */
+/* line 283, ../../sass/main.scss */
 h3.docs-header {
   display: inline-block;
 }
 
-/* line 284, ../../sass/main.scss */
+/* line 287, ../../sass/main.scss */
 .doc-count {
   margin-left: 30px;
 }
+@media (max-width: 768px) {
+  /* line 287, ../../sass/main.scss */
+  .doc-count {
+    display: block;
+    margin: -6px 0 10px 48px;
+  }
+}
 
-/* line 288, ../../sass/main.scss */
+/* line 296, ../../sass/main.scss */
 .dashboard-module ul {
   padding: 0;
 }
 
-/* line 292, ../../sass/main.scss */
+/* line 300, ../../sass/main.scss */
 .appt-module .row, .hired-module .row, .doc-module .row, .messages-module .row {
   line-height: 86px;
   margin-bottom: 20px;
@@ -299,145 +312,172 @@ h3.docs-header {
 }
 
 @media (max-width: 768px) {
-  /* line 299, ../../sass/main.scss */
+  /* line 307, ../../sass/main.scss */
   .appt-module .row, .hired-module .row {
     line-height: 56px;
   }
 }
 
-/* line 305, ../../sass/main.scss */
+@media (max-width: 768px) {
+  /* line 313, ../../sass/main.scss */
+  .messages-module .row {
+    line-height: 0;
+  }
+}
+
+/* line 319, ../../sass/main.scss */
 .dashboard-module .user-img {
   margin-right: 10px;
 }
 
-/* line 309, ../../sass/main.scss */
+/* line 323, ../../sass/main.scss */
 .dashboard-module header {
   border-bottom: 1px solid #eee;
   margin-bottom: 20px;
 }
 
-/* line 314, ../../sass/main.scss */
+/* line 328, ../../sass/main.scss */
 .appt-time, .appt-channel, .status {
   padding-left: 44px;
   display: inline-block;
 }
 
-/* line 319, ../../sass/main.scss */
+/* line 333, ../../sass/main.scss */
 .appt-time {
   background: url("../img/clock-icon.png") 0 center no-repeat;
 }
 
-/* line 323, ../../sass/main.scss */
+/* line 337, ../../sass/main.scss */
 .appt-channel.phone {
   background: url("../img/phone-icon.png") 0 center no-repeat;
 }
 
-/* line 327, ../../sass/main.scss */
+/* line 341, ../../sass/main.scss */
 .appt-channel.video {
   background: url("../img/video-icon.png") 0 center no-repeat;
 }
 
-/* line 331, ../../sass/main.scss */
+/* line 345, ../../sass/main.scss */
 .status {
   background: url("../img/status-icon.png") 0 center no-repeat;
 }
 
-/* line 336, ../../sass/main.scss */
+/* line 350, ../../sass/main.scss */
 .dashboard-container .btn-primary {
   width: 120px;
   height: 40px;
 }
 
-/* line 341, ../../sass/main.scss */
+/* line 355, ../../sass/main.scss */
 .dashboard-module .btn-primary {
   margin-top: 12px;
 }
 @media (max-width: 992px) {
-  /* line 341, ../../sass/main.scss */
+  /* line 355, ../../sass/main.scss */
   .dashboard-module .btn-primary {
     float: left !important;
     margin-top: 4px;
   }
 }
 
-/* line 349, ../../sass/main.scss */
+/* line 363, ../../sass/main.scss */
 a.reschedule, a.cancel, a.provider-phone {
   position: absolute;
   top: 26px;
   font-size: 10px;
 }
 @media (max-width: 992px) {
-  /* line 349, ../../sass/main.scss */
+  /* line 363, ../../sass/main.scss */
   a.reschedule, a.cancel, a.provider-phone {
     top: -20px;
   }
 }
 @media (max-width: 992px) and (max-width: 768px) {
-  /* line 349, ../../sass/main.scss */
+  /* line 363, ../../sass/main.scss */
   a.reschedule, a.cancel, a.provider-phone {
     top: -6px;
   }
 }
 
-/* line 362, ../../sass/main.scss */
+/* line 376, ../../sass/main.scss */
 a.reschedule {
   right: 80px;
 }
 @media (max-width: 992px) {
-  /* line 362, ../../sass/main.scss */
+  /* line 376, ../../sass/main.scss */
   a.reschedule {
     left: 146px;
   }
 }
 
-/* line 369, ../../sass/main.scss */
+/* line 383, ../../sass/main.scss */
 a.cancel {
   right: 22px;
 }
 @media (max-width: 992px) {
-  /* line 369, ../../sass/main.scss */
+  /* line 383, ../../sass/main.scss */
   a.cancel {
     left: 206px;
   }
 }
 
-/* line 376, ../../sass/main.scss */
+/* line 390, ../../sass/main.scss */
 a.provider-phone {
   right: 44px;
 }
 @media (max-width: 992px) {
-  /* line 376, ../../sass/main.scss */
+  /* line 390, ../../sass/main.scss */
   a.provider-phone {
     left: 146px;
   }
 }
 
-/* line 383, ../../sass/main.scss */
+/* line 397, ../../sass/main.scss */
 .doc-name {
   display: block;
   line-height: 18px;
   color: #999;
 }
 
-/* line 389, ../../sass/main.scss */
-.doc-name.uploaded {
-  color: #008b9d;
-}
-
-/* line 393, ../../sass/main.scss */
+/* line 403, ../../sass/main.scss */
 .doc-module .row {
   text-align: center;
 }
 
 @media (max-width: 768px) {
-  /* line 397, ../../sass/main.scss */
+  /* line 407, ../../sass/main.scss */
   .doc-module .user-img {
     width: 66px;
     height: 66px;
   }
 }
 
-/* line 404, ../../sass/main.scss */
+/* line 414, ../../sass/main.scss */
+.doc-not-uploaded, .doc-uploaded {
+  width: 62px;
+  height: 62px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+
+/* line 423, ../../sass/main.scss */
+.doc-not-uploaded {
+  background: url("../img/doc-not-uploaded.png") 0 center no-repeat;
+}
+
+/* line 427, ../../sass/main.scss */
+.doc-uploaded {
+  background: url("../img/doc-uploaded.png") 0 center no-repeat;
+}
+
+/* line 431, ../../sass/main.scss */
+.doc-uploaded + .doc-name {
+  color: #008b9d;
+}
+
+/* line 435, ../../sass/main.scss */
 .message-content-container {
   line-height: 1.5em;
   padding-top: 34px;
@@ -445,13 +485,26 @@ a.provider-phone {
   overflow: hidden;
   max-height: 100px;
 }
+@media (max-width: 768px) {
+  /* line 435, ../../sass/main.scss */
+  .message-content-container {
+    padding-top: 10px;
+  }
+}
 
-/* line 412, ../../sass/main.scss */
+/* line 449, ../../sass/main.scss */
 .message-time {
   color: #999999;
 }
+@media (max-width: 768px) {
+  /* line 449, ../../sass/main.scss */
+  .message-time {
+    float: left !important;
+    margin-top: 10px;
+  }
+}
 
-/* line 416, ../../sass/main.scss */
+/* line 457, ../../sass/main.scss */
 .message-unread {
   font-weight: 900;
 }
@@ -462,7 +515,7 @@ a.provider-phone {
 /*
  * Image replacement
  */
-/* line 430, ../../sass/main.scss */
+/* line 471, ../../sass/main.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -471,7 +524,7 @@ a.provider-phone {
   *text-indent: -9999px;
 }
 
-/* line 438, ../../sass/main.scss */
+/* line 479, ../../sass/main.scss */
 .ir:before {
   content: "";
   display: block;
@@ -482,7 +535,7 @@ a.provider-phone {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 449, ../../sass/main.scss */
+/* line 490, ../../sass/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -491,7 +544,7 @@ a.provider-phone {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 458, ../../sass/main.scss */
+/* line 499, ../../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -507,7 +560,7 @@ a.provider-phone {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 475, ../../sass/main.scss */
+/* line 516, ../../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -521,7 +574,7 @@ a.provider-phone {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 488, ../../sass/main.scss */
+/* line 529, ../../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -537,7 +590,7 @@ a.provider-phone {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 505, ../../sass/main.scss */
+/* line 546, ../../sass/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -546,7 +599,7 @@ a.provider-phone {
   /* 2 */
 }
 
-/* line 510, ../../sass/main.scss */
+/* line 551, ../../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -555,7 +608,7 @@ a.provider-phone {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 519, ../../sass/main.scss */
+/* line 560, ../../sass/main.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -576,7 +629,7 @@ a.provider-phone {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 546, ../../sass/main.scss */
+  /* line 587, ../../sass/main.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -585,18 +638,18 @@ a.provider-phone {
     text-shadow: none !important;
   }
 
-  /* line 554, ../../sass/main.scss */
+  /* line 595, ../../sass/main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 558, ../../sass/main.scss */
+  /* line 599, ../../sass/main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 562, ../../sass/main.scss */
+  /* line 603, ../../sass/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -604,33 +657,33 @@ a.provider-phone {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 572, ../../sass/main.scss */
+  /* line 613, ../../sass/main.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 577, ../../sass/main.scss */
+  /* line 618, ../../sass/main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 582, ../../sass/main.scss */
+  /* line 623, ../../sass/main.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 587, ../../sass/main.scss */
+  /* line 628, ../../sass/main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 591, ../../sass/main.scss */
+  /* line 632, ../../sass/main.scss */
   img {
     max-width: 100% !important;
   }
@@ -639,7 +692,7 @@ a.provider-phone {
     margin: 0.5cm;
 }
 
-  /* line 601, ../../sass/main.scss */
+  /* line 642, ../../sass/main.scss */
   p,
   h2,
   h3 {
@@ -647,7 +700,7 @@ a.provider-phone {
     widows: 3;
   }
 
-  /* line 607, ../../sass/main.scss */
+  /* line 648, ../../sass/main.scss */
   h2,
   h3 {
     page-break-after: avoid;

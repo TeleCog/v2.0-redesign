@@ -259,6 +259,9 @@ a.message-btn.btn {
     font-weight: bold;
     padding-left: 44px;
     line-height: 40px;
+    @include breakpoint(mobile){
+        line-height: 30px;
+    }
 }
 
 h3.appt-header {
@@ -283,6 +286,11 @@ h3.docs-header {
 
 .doc-count {
     margin-left: 30px;
+    @include breakpoint(mobile){
+        display: block;
+        margin: -6px 0 10px 48px;
+    }
+
 }
 
 .dashboard-module ul {
@@ -299,6 +307,12 @@ h3.docs-header {
 .appt-module .row, .hired-module .row {
     @include breakpoint(mobile){
         line-height: 56px;
+    }
+}
+
+.messages-module .row {
+    @include breakpoint(mobile){
+        line-height: 0;
     }
 }
 
@@ -386,10 +400,6 @@ a.provider-phone {
     color: #999;
 }
 
-.doc-name.uploaded {
-    color: $tiel;
-}
-
 .doc-module .row {
     text-align: center;
 }
@@ -401,16 +411,47 @@ a.provider-phone {
     }
 }
 
+.doc-not-uploaded, .doc-uploaded {
+    width: 62px;
+    height: 62px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+
+.doc-not-uploaded {
+    background: url("../img/doc-not-uploaded.png") 0 center no-repeat;
+}
+
+.doc-uploaded {
+    background: url("../img/doc-uploaded.png") 0 center no-repeat;
+}
+
+.doc-uploaded + .doc-name {
+    color: $tiel;
+}
+
 .message-content-container {
     line-height: 1.5em;
     padding-top: 34px;
     padding-right: 20px;
     overflow: hidden;
     max-height: 100px;
+    @include breakpoint(mobile){
+        padding-top: 10px;
+    }
+
 }
+
+
 
 .message-time {
     color: $grey;
+    @include breakpoint(mobile){
+        float: left!important;
+        margin-top: 10px;
+    }
 }
 
 .message-unread {
