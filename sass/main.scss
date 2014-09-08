@@ -280,15 +280,15 @@ h3.messages-header {
     background: url("../img/messages-icon.png") 0 center no-repeat;
 }
 
-h3.docs-header {
-    display: inline-block;
-}
-
 .doc-count {
     margin-left: 30px;
+    position: relative;
+    top: -44px;
+    left: 160px;
     @include breakpoint(mobile){
         display: block;
         margin: -6px 0 10px 48px;
+        position: static;
     }
 
 }
@@ -320,6 +320,10 @@ h3.docs-header {
     margin-right: 10px;
 }
 
+.doc-module .user-img {
+    margin-right: 0;
+}
+
 .dashboard-module header {
     border-bottom: 1px solid #eee;
     margin-bottom: 20px;
@@ -340,6 +344,12 @@ h3.docs-header {
 
 .appt-channel.video {
     background: url("../img/video-icon.png") 0 center no-repeat;
+}
+
+.appt-channel.phone, .appt-channel.video {
+    @include breakpoint(mobile){
+        margin-left: -2px;
+    }
 }
 
 .status {
@@ -416,7 +426,7 @@ a.provider-phone {
     height: 62px;
     display: block;
     margin: 0 auto;
-    margin-top: 14px;
+    margin-top: 12px;
     margin-bottom: 10px;
 }
 
@@ -430,6 +440,11 @@ a.provider-phone {
 
 .doc-uploaded + .doc-name {
     color: $tiel;
+}
+
+.add-new-file {
+    margin-top: -4px;
+    display: inline-block;
 }
 
 .message-content-container {
