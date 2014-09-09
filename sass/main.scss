@@ -363,7 +363,7 @@ h3.messages-header {
 }
 
 .dashboard-module .btn-primary {
-    margin-top: 12px;
+    margin-top: 22px;
     @include breakpoint(large){
         float: left!important;
         margin-top: 4px;
@@ -372,7 +372,7 @@ h3.messages-header {
 
 a.reschedule, a.cancel, a.provider-phone {
     position: absolute;
-    top: 26px;
+    top: 40px;
     font-size: 10px;
     @include breakpoint(large){
         top: -20px;

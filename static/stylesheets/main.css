@@ -381,7 +381,7 @@ h3.messages-header {
 
 /* line 365, ../../sass/main.scss */
 .dashboard-module .btn-primary {
-  margin-top: 12px;
+  margin-top: 22px;
 }
 @media (max-width: 992px) {
   /* line 365, ../../sass/main.scss */
@@ -394,7 +394,7 @@ h3.messages-header {
 /* line 373, ../../sass/main.scss */
 a.reschedule, a.cancel, a.provider-phone {
   position: absolute;
-  top: 26px;
+  top: 40px;
   font-size: 10px;
 }
 @media (max-width: 992px) {
