@@ -123,187 +123,21 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
 
     <!-- MAIN BODY -->
 
-    <div class="main-body body-container-new dashboard-container" id="render_resources">
+    <div class="main-body body-container-new scheduling-container" id="render_resources">
 
-        <!-- APPOINTMENT MODULE -->
+        <section class="greeting-container">
+            <h1>Choose <span class="headline-emp">How</span> & <span class="headline-emp">When</span> you’d like to meet</h1>
+            <p>Your personal information is protected and will not be shared with financial professionals</p>
+        </section>
 
-        <div class="dashboard-module appt-module" >
-            <header>
-                <h3 class="appt-header">Appoinments</h3>
-            </header>
-            <div class="row">
-                <ul>
-                    <li class="col-md-4 col-sm-4">
-                        <a href="#">
-                            <img src="static/img/user1.png" class="user-img">
-                            <span class="user-name">Arman Bajwa</span>
-                        </a>
-                    </li>
-                    <li class="col-md-3 col-sm-4">
-                        <span class="appt-time">Tues, Dec. 28th</span>
-                    </li>
-                    <li class="col-md-2 col-sm-3">
-                        <img src="">
-                        <span class="appt-channel phone">By Phone</span> <!-- ADD CLASS PHONE OR VIDEO DEPENDING ON CHANNEL SELECTED BY USER -->
-                    </li>
-                    <li class="col-md-3 col-sm-12">
-                        <button type="button" class="btn btn-primary pull-right">Hire</button>
-                        <a class="reschedule" href="/providers/7/free_consultation">reschedule</a>
-                        <a class="cancel" href="/providers/7/free_consultation">cancel</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="row">
-                <ul>
-                    <li class="col-md-4 col-sm-4">
-                        <a href="#">
-                            <img src="static/img/user2.png" class="user-img">
-                            <span class="user-name">Dr. Aasim Saeed</span>
-                        </a>
-                    </li>
-                    <li class="col-md-3 col-sm-4">
-                        <span class="appt-time">Wed, Dec. 29th</span>
-                    </li>
-                    <li class="col-md-2 col-sm-3">
-                        <img src="">
-                        <span class="appt-channel video">By Video</span> <!-- ADD CLASS PHONE OR VIDEO DEPENDING ON CHANNEL SELECTED BY USER -->
-                    </li>
-                    <li class="col-md-3 col-sm-12">
-                        <button type="button" class="btn btn-primary pull-right">Hire</button>
-                        <a class="reschedule" href="/providers/7/free_consultation">reschedule</a>
-                        <a class="cancel" href="/providers/7/free_consultation">cancel</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <section class="meet-by-container">
 
+        </section>
 
-
-        <!-- HIRED MODULE -->
-
-        <div class="dashboard-module hired-module" >
-            <header>
-                <h3 class="hired-header">Financial Professionals</h3>
-            </header>
-            <div class="row">
-                <ul>
-                    <li class="col-md-4 col-sm-4">
-                        <a href="#">
-                            <img src="static/img/user1.png" class="user-img">
-                            <span class="user-name">Arman Bajwa</span>
-                        </a>
-                    </li>
-                    <li class="col-md-3 col-sm-4">
-                        <span class="status">Taxes in progress</span>
-                    </li>
-                    <li class="col-md-5 col-sm-12">
-                        <a class="btn btn-primary pull-right message-btn" href="/chat_histories?provider=7" title="Message" data-remote="true" data-name="Nate Lassiter" data-available="false" data-id="7">Message</a>
-                        <a class="provider-phone" href="/providers/7/free_consultation">954-560-3576</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-
-
-        <!-- DOCS MODULE -->
-
-        <div class="dashboard-module doc-module" >
-            <header>
-                <h3 class="docs-header">Documents</h3>
-                <span class="doc-count">( 1 of 3 docs uploaded )</span>
-            </header>
-            <div class="row">
-                <ul>
-                    <li class="col-sm-2 col-xs-12">
-                        <img src="static/img/user1.png" class="user-img">
-                    </li>
-                    <li class="col-sm-10">
-                        <ul>
-                            <li class="col-sm-2 col-xs-6">
-                                <span class="doc-not-uploaded"></span>  <!-- ADD CLASS "DOC-NOT-UPLOADED" TO DOC THAT HAVENT BEEN UPLOADED -->
-                                <span class="doc-name ">W9</span>
-                            </li>
-                            <li class="col-sm-2 col-xs-6">
-                                <span class="doc-uploaded"></span>  <!-- ADD CLASS "DOC-UPLOADED" TO DOC THAT HAVENT BEEN UPLOADED -->
-                                <span class="doc-name ">W9</span>
-                            </li>
-                            <li class="col-sm-2 col-xs-6">
-                                <span class="doc-not-uploaded"></span>  <!-- ADD CLASS "DOC-NOT-UPLOADED" TO DOC THAT HAVENT BEEN UPLOADED -->
-                                <span class="doc-name ">W9</span>
-                            </li>
-                            <li class="col-sm-2 col-xs-6">
-                                <span class="doc-uploaded"></span>  <!-- ADD CLASS "DOC-UPLOADED" TO DOC THAT HAVENT BEEN UPLOADED -->
-                                <span class="doc-name ">W9</span>
-                            </li>
-                            <li class="col-sm-2 col-xs-6">
-                                <span class="doc-not-uploaded"></span>  <!-- ADD CLASS "DOC-NOT-UPLOADED" TO DOC THAT HAVENT BEEN UPLOADED -->
-                                <span class="doc-name ">W9</span>
-                            </li>
-                            <li class="col-sm-2 col-xs-6">
-                                <span class="doc-uploaded"></span>  <!-- ADD CLASS "DOC-UPLOADED" TO DOC THAT HAVENT BEEN UPLOADED -->
-                                <span class="doc-name ">W9</span>
-                            </li>
-                            <li class="col-sm-2 col-xs-6">
-                                <span class="doc-uploaded"></span>  <!-- ADD CLASS "DOC-UPLOADED" TO DOC THAT HAVENT BEEN UPLOADED -->
-                                <span class="doc-name ">W9</span>
-                            </li>
-                            <li class="col-sm-2 col-xs-6">
-                                <img src="static/img/new-doc.png" class="add-new-file">
-                                <span class="doc-name">Add New File</span>  
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-
-
-        <!-- MESSAGES MODULE -->
-
-        <div class="dashboard-module messages-module" >
-            <header>
-                <h3 class="messages-header">Messages</h3>
-            </header>
-            <div class="row message-unread">    <!-- ADD CLASS "MESSAGE-UNREAD" FOR UNREAD MESSAGES -->
-                <ul>
-                    <li class="col-sm-4">
-                        <a href="#">
-                            <img src="static/img/user1.png" class="user-img">
-                            <span class="user-name">Arman Bajwa</span>
-                        </a>
-                    </li>
-                    <li class="col-sm-7 message-content-container">
-                        <a href="#">
-                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non venenatis nisl, a dignissim erat. Aliquam tincidunt odio a egestas facilisis. Duis id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non venenatis nisl, a dignissim erat. Aliquam tincidunt odio a egestas facilisis. Duis id</span>
-                        </a>
-                    </li>
-                    <li class="col-sm-1">
-                        <span class="message-time pull-right">7/1/2014</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="row">
-                <ul>
-                    <li class="col-sm-4">
-                        <a href="#">
-                            <img src="static/img/user2.png" class="user-img">
-                            <span class="user-name">Dr. Aasim Saeed</span>
-                        </a>
-                    </li>
-                    <li class="col-sm-7 message-content-container">
-                        <a href="#">
-                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span>
-                        </a>
-                    </li>
-                    <li class="col-sm-1">
-                        <span class="message-time pull-right">7/1/2014</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
+        <section class="scheduling-ui-container">
+            <p>Select all time slots you are available</p>
+            
+        </section>
 
     </div>
 

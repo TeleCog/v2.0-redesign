@@ -203,7 +203,7 @@ a.message-btn.btn {
     line-height: 26px;
 }
 
-// NAV BAR
+// NAV BAR MAIN
 
 .navbar-default {
     background-color: transparent;
@@ -215,6 +215,7 @@ a.message-btn.btn {
 
 .navbar {
     margin: 10px 0;
+    border-radius: 0;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -223,6 +224,93 @@ a.message-btn.btn {
 
 .navbar-nav.navbar-right:last-child {
     margin-right: 0;
+}
+
+// NAV BAR VC
+
+.container-fluid.vc-screen {
+    padding: 0;
+}
+
+.vc-screen .navbar-default {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.vc-screen .navbar-header {
+    line-height: 62px;
+}
+
+.vc-screen .navbar-brand {
+    margin-top: 4px;
+}
+
+.vc-nav-btn {
+    width: 62px;
+    height: 62px;
+    margin-left: 30px;
+    @include breakpoint(large){
+        margin-left: 20px;
+    }
+}
+
+.video-on {
+    background: url("../img/video-on.png") 0 center no-repeat;
+}
+
+.video-off {
+    background: url("../img/video-off.png") 0 center no-repeat;
+}
+
+.mic-on {
+    background: url("../img/mic-on.png") 0 center no-repeat;
+}
+
+.mic-off {
+    background: url("../img/mic-off.png") 0 center no-repeat;
+}
+
+.screen-expand {
+    background: url("../img/screen-expand.png") 0 center no-repeat;
+}
+
+.screen-shrink {
+    background: url("../img/screen-shrink.png") 0 center no-repeat;
+}
+
+.end-call{
+    background: url("../img/end-call.png") 0 center no-repeat;
+}
+
+.navbar-default .navbar-text {
+    color: $tiel;
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 0;
+    @include breakpoint(large){
+        font-size: 1.5em;
+    }
+}
+
+.vc-with.navbar-text {
+    margin-left: 30px;
+    margin-right: -6px;
+    text-transform: lowercase;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.vc-name {
+    text-transform: capitalize;
+}
+
+.vc-with, .vc-name {
+    @include breakpoint(mobile){
+        display: none;
+    }
 }
 
 
@@ -251,7 +339,7 @@ a.message-btn.btn {
     margin-bottom: 50px;
 }
 
-.dashboard-module h3 {
+.dashboard-module h3, .vc-screen h3 {
     font-family: 'Roboto Slab', serif;
     color: $tiel;
     text-transform: uppercase;
@@ -381,7 +469,6 @@ a.reschedule, a.cancel, a.provider-phone {
         }
     }
 }
-    
 
 a.reschedule {
     right: 80px;
@@ -473,6 +560,83 @@ a.provider-phone {
     font-weight: 900;
 }
 
+
+// VC
+
+.messages-container {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-top: 0;
+    padding: 0;
+} 
+
+.video-container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.messages-container header {
+    border-bottom: 1px solid #ddd;
+}
+
+.messages-container h3.messages-header {
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-left: 50px;
+    @include breakpoint(large){
+        padding-top: 10px;
+    }
+}
+
+.message-sender {
+    font-weight: 900;
+}
+
+.chat-message p {
+    margin: 10px 0 0 0;
+    line-height: 22px;
+}
+
+p.message {
+    margin-top: 4px;
+}
+
+.chat-body ul {
+    padding-left: 0;
+}
+
+li.chat-message {
+    padding: 0 10px 10px 26px;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-input {
+    padding: 2px 24px 10px 24px;
+    line-height: 1.5em;
+}
+
+.chat-input textarea {
+}
+
+
+// SCHEDULING
+
+.scheduling-container  {
+    text-align: center;
+}
+
+.headline-emp {
+    color: $orange;
+}
+
+.scheduling-container  h1 {
+    margin-top: 0;
+}
+
+.scheduling-container  section {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 6px;
+}
 
 
 /* ==========================================================================

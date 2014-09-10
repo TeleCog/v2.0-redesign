@@ -88,12 +88,12 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
     });
     </script>
 
-<div class="container">
+<div class="container-fluid vc-screen">
 
     <!-- MAIN MAV -->
 
     <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
+        <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -103,15 +103,18 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#"><img src="static/img/logo.png"></a>
+                <p class="navbar-text vc-with">with</p>
+                <p class="navbar-text vc-name">Nate Lassiter</p>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="/billing">Billing</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Account</a></li>
+                    <li><a href="#" class="vc-nav-btn video-on"></a></li> <!-- USE CLASSES 'VIDEO-ON' OR 'VIDEO-OFF' -->
+                    <li><a href="#" class="vc-nav-btn mic-on"></a></li> <!-- USE CLASSES 'MIC-ON' OR 'MIC-OFF' -->
+                    <li><a href="#" class="vc-nav-btn screen-expand"></a></li> <!-- USE CLASSES 'SCREEN-EXPAND' OR 'SCREEN-SHRINK' -->
+                    <li><a href="#" class="vc-nav-btn end-call"></a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -123,188 +126,36 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
 
     <!-- MAIN BODY -->
 
-    <div class="main-body body-container-new dashboard-container" id="render_resources">
-
-        <!-- APPOINTMENT MODULE -->
-
-        <div class="dashboard-module appt-module" >
-            <header>
-                <h3 class="appt-header">Appoinments</h3>
-            </header>
-            <div class="row">
-                <ul>
-                    <li class="col-md-4 col-sm-4">
-                        <a href="#">
-                            <img src="static/img/user1.png" class="user-img">
-                            <span class="user-name">Arman Bajwa</span>
-                        </a>
-                    </li>
-                    <li class="col-md-3 col-sm-4">
-                        <span class="appt-time">Tues, Dec. 28th</span>
-                    </li>
-                    <li class="col-md-2 col-sm-3">
-                        <img src="">
-                        <span class="appt-channel phone">By Phone</span> <!-- ADD CLASS PHONE OR VIDEO DEPENDING ON CHANNEL SELECTED BY USER -->
-                    </li>
-                    <li class="col-md-3 col-sm-12">
-                        <button type="button" class="btn btn-primary pull-right">Hire</button>
-                        <a class="reschedule" href="/providers/7/free_consultation">reschedule</a>
-                        <a class="cancel" href="/providers/7/free_consultation">cancel</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="row">
-                <ul>
-                    <li class="col-md-4 col-sm-4">
-                        <a href="#">
-                            <img src="static/img/user2.png" class="user-img">
-                            <span class="user-name">Dr. Aasim Saeed</span>
-                        </a>
-                    </li>
-                    <li class="col-md-3 col-sm-4">
-                        <span class="appt-time">Wed, Dec. 29th</span>
-                    </li>
-                    <li class="col-md-2 col-sm-3">
-                        <img src="">
-                        <span class="appt-channel video">By Video</span> <!-- ADD CLASS PHONE OR VIDEO DEPENDING ON CHANNEL SELECTED BY USER -->
-                    </li>
-                    <li class="col-md-3 col-sm-12">
-                        <button type="button" class="btn btn-primary pull-right">Hire</button>
-                        <a class="reschedule" href="/providers/7/free_consultation">reschedule</a>
-                        <a class="cancel" href="/providers/7/free_consultation">cancel</a>
-                    </li>
-                </ul>
-            </div>
+    <div class="row">
+        <div class="video-container col-md-9">
+            <img src="static/img/vc-placeholder.png">
         </div>
-
-
-
-        <!-- HIRED MODULE -->
-
-        <div class="dashboard-module hired-module" >
-            <header>
-                <h3 class="hired-header">Financial Professionals</h3>
-            </header>
-            <div class="row">
-                <ul>
-                    <li class="col-md-4 col-sm-4">
-                        <a href="#">
-                            <img src="static/img/user1.png" class="user-img">
-                            <span class="user-name">Arman Bajwa</span>
-                        </a>
-                    </li>
-                    <li class="col-md-3 col-sm-4">
-                        <span class="status">Taxes in progress</span>
-                    </li>
-                    <li class="col-md-5 col-sm-12">
-                        <a class="btn btn-primary pull-right message-btn" href="/chat_histories?provider=7" title="Message" data-remote="true" data-name="Nate Lassiter" data-available="false" data-id="7">Message</a>
-                        <a class="provider-phone" href="/providers/7/free_consultation">954-560-3576</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-
-
-        <!-- DOCS MODULE -->
-
-        <div class="dashboard-module doc-module" >
-            <header>
-                <h3 class="docs-header">Documents</h3>
-                <span class="doc-count">( 1 of 3 docs uploaded )</span>
-            </header>
-            <div class="row">
-                <ul>
-                    <li class="col-sm-2 col-xs-12">
-                        <img src="static/img/user1.png" class="user-img">
-                    </li>
-                    <li class="col-sm-10">
-                        <ul>
-                            <li class="col-sm-2 col-xs-6">
-                                <span class="doc-not-uploaded"></span>  <!-- ADD CLASS "DOC-NOT-UPLOADED" TO DOC THAT HAVENT BEEN UPLOADED -->
-                                <span class="doc-name ">W9</span>
-                            </li>
-                            <li class="col-sm-2 col-xs-6">
-                                <span class="doc-uploaded"></span>  <!-- ADD CLASS "DOC-UPLOADED" TO DOC THAT HAVENT BEEN UPLOADED -->
-                                <span class="doc-name ">W9</span>
-                            </li>
-                            <li class="col-sm-2 col-xs-6">
-                                <span class="doc-not-uploaded"></span>  <!-- ADD CLASS "DOC-NOT-UPLOADED" TO DOC THAT HAVENT BEEN UPLOADED -->
-                                <span class="doc-name ">W9</span>
-                            </li>
-                            <li class="col-sm-2 col-xs-6">
-                                <span class="doc-uploaded"></span>  <!-- ADD CLASS "DOC-UPLOADED" TO DOC THAT HAVENT BEEN UPLOADED -->
-                                <span class="doc-name ">W9</span>
-                            </li>
-                            <li class="col-sm-2 col-xs-6">
-                                <span class="doc-not-uploaded"></span>  <!-- ADD CLASS "DOC-NOT-UPLOADED" TO DOC THAT HAVENT BEEN UPLOADED -->
-                                <span class="doc-name ">W9</span>
-                            </li>
-                            <li class="col-sm-2 col-xs-6">
-                                <span class="doc-uploaded"></span>  <!-- ADD CLASS "DOC-UPLOADED" TO DOC THAT HAVENT BEEN UPLOADED -->
-                                <span class="doc-name ">W9</span>
-                            </li>
-                            <li class="col-sm-2 col-xs-6">
-                                <span class="doc-uploaded"></span>  <!-- ADD CLASS "DOC-UPLOADED" TO DOC THAT HAVENT BEEN UPLOADED -->
-                                <span class="doc-name ">W9</span>
-                            </li>
-                            <li class="col-sm-2 col-xs-6">
-                                <img src="static/img/new-doc.png" class="add-new-file">
-                                <span class="doc-name">Add New File</span>  
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-
-
-        <!-- MESSAGES MODULE -->
-
-        <div class="dashboard-module messages-module" >
+        <div class="messages-container col-md-3">
             <header>
                 <h3 class="messages-header">Messages</h3>
             </header>
-            <div class="row message-unread">    <!-- ADD CLASS "MESSAGE-UNREAD" FOR UNREAD MESSAGES -->
+            <section class="chat-body">
                 <ul>
-                    <li class="col-sm-4">
-                        <a href="#">
-                            <img src="static/img/user1.png" class="user-img">
-                            <span class="user-name">Arman Bajwa</span>
-                        </a>
+                    <li class="chat-message">
+                        <p class="message-sender">Nate Lassiter</p>
+                        <p class="message">Hey, there. How are you doing? Looking forward to our conversation.</p>
                     </li>
-                    <li class="col-sm-7 message-content-container">
-                        <a href="#">
-                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non venenatis nisl, a dignissim erat. Aliquam tincidunt odio a egestas facilisis. Duis id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non venenatis nisl, a dignissim erat. Aliquam tincidunt odio a egestas facilisis. Duis id</span>
-                        </a>
+                    <li class="chat-message">
+                        <p class="message-sender">Nate Lassiter</p>
+                        <p class="message">Hey, there. How are you doing? Looking forward to our conversation.</p>
                     </li>
-                    <li class="col-sm-1">
-                        <span class="message-time pull-right">7/1/2014</span>
+                    <li class="chat-message">
+                        <p class="message-sender">Nate Lassiter</p>
+                        <p class="message">Hey, there. How are you doing? Looking forward to our conversation.</p>
                     </li>
                 </ul>
-            </div>
-            <div class="row">
-                <ul>
-                    <li class="col-sm-4">
-                        <a href="#">
-                            <img src="static/img/user2.png" class="user-img">
-                            <span class="user-name">Dr. Aasim Saeed</span>
-                        </a>
-                    </li>
-                    <li class="col-sm-7 message-content-container">
-                        <a href="#">
-                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span>
-                        </a>
-                    </li>
-                    <li class="col-sm-1">
-                        <span class="message-time pull-right">7/1/2014</span>
-                    </li>
-                </ul>
-            </div>
+            </section>
+            <section class="chat-input">
+                <form role="form">
+                    <textarea class="form-control" placeholder="enter message..."></textarea>
+                </form>
+            </section>
         </div>
-
-
     </div>
 
     <!-- END MAIN BODY -->
