@@ -203,6 +203,13 @@ a.message-btn.btn {
     line-height: 26px;
 }
 
+.btn:disabled {
+    border-color: $grey;
+    color: $grey;
+    background-color: white;
+    opacity: .4;
+}
+
 // NAV BAR MAIN
 
 .navbar-default {
@@ -629,15 +636,69 @@ li.chat-message {
     color: $orange;
 }
 
-.scheduling-container  h1 {
-    margin-top: 0;
+.scheduling-container {
+    @include breakpoint(mobile){
+        padding: 16px;
+    }
 }
 
-.scheduling-container  section {
+.scheduling-container  h1 {
+    margin-top: 0;
+    @include breakpoint(mobile){
+        font-size: 2em;
+    }
+}
+
+section.greeting-container, section.meet-by-container {
     border-bottom: 1px solid #ddd;
     padding-bottom: 6px;
 }
 
+.scheduling-container input[type=radio], input[type=checkbox] {
+    margin-right: 10px;
+}
+
+.phone-label {
+    margin-right: 10px;
+}
+
+.scheduling-container .radio-inline {
+    margin-top: -4px;
+}
+
+.scheduling-container .btn-primary {
+    margin-bottom: 20px;
+}
+
+.meet-by {
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-weight: 900;
+}
+
+.meet-by-container {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.time-zone-btn {
+    width: 70px;
+    background-color: white;
+    border-color: white;
+}
+
+.scheduling-table th {
+    width: 60px;
+    text-align: center;
+}
+
+.scheduling-table td {
+    background-color: #ffebd9;
+}
+
+.scheduling-table .highlighted {
+    background-color: $orange;
+}
 
 /* ==========================================================================
    Helper classes

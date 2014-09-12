@@ -27,7 +27,8 @@
 
 <meta property="og:description" content="LiveWire saves people time and money with a new way to file their taxes. We give customers a FREE online consult with a live tax expert, on their computer through video conferencing."/>
 <meta property="og:url" content="https://www.livewiretax.com/"/>
-  
+
+
 <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300|Roboto:400,900' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="static/stylesheets/normalize.css">
 <link rel="stylesheet" href="static/stylesheets/animate.css">
@@ -35,24 +36,19 @@
 <link rel="stylesheet" href="static/stylesheets/main.css">
 
 
-<script src='/assets/firebase.js'></script>
-<!--<script src='https://cdn.firebase.com/v0/firebase.js'></script>-->
-<!-- <script src="https://checkout.stripe.com/v2/checkout.js"></script>   -->
+
+
+
 <link href="/assets/application-4ebf83f5d8176d7d64e05b6c734c6beb.css" media="all" rel="stylesheet" />
 
 
 <title>LiveWire</title>
 
-<script src="/assets/modernizr-c312fe973b286f282710ebeac7cee93b.js"></script>
-<script src="/assets/site-b72e68fffb13c256a4aab4197dac8038.js"></script>
-<script text="text/javascript" src="https://moremoneyfor1.s3.amazonaws.com/strength.min.js"></script>
-<script text="text/javascript" src="https://moremoneyfor1.s3.amazonaws.com/strengthpw.js"></script>
-<script type="text/javascript" src="https://js.balancedpayments.com/1.1/balanced.js"></script>
 
 <meta content="authenticity_token" name="csrf-param" />
 <meta content="DjAiyvavOVqZ2qqR6rxTwXKKSpRidYzMevXXAbp6Zmc=" name="csrf-token" />
 
- 
+    
 </head>
 
 
@@ -102,90 +98,73 @@
         </section>
 
         <form role="form">
-            <section class="meet-by-container form-group">
+            <!-- <section class="meet-by-container form-group">
                 <label class="meet-by control-label">meet by</label>
-                <label class="phone-label">
+                <label class="radio-inline">
                     <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="phone">Phone
                 </label>
-                <label >
+                <label class="radio-inline">
                     <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="video">Video
                 </label>
-            </section>
+            </section> -->
 
             <section class="scheduling-ui-container">
                 <p>Select all time slots you are available</p>
                 <button type="button" class="btn btn-primary" disabled>confirm times</button>
-                <div class="table-responsive">
-                    <table cellpadding="0" cellspacing="0" id="sched_table" class="scheduling-table table table-bordered">
-                    <tbody>
-                        <tr>
-                            <th>
-                                <select class="time-zone-btn dropdown" name="time-zone">
-                                    <option disabled="">Select time zone</option>
+                <div id="daily-timer-table" class="">
+                    <table cellpadding="0" cellspacing="0" id="sched_table" class="daily-timer-table table table-bordered">
+                        <tbody><tr><th></th><th class="schedule-day">Sun</th><th class="schedule-day">Mon</th><th class="schedule-day">Tue</th><th class="schedule-day">Wed</th><th class="schedule-day">Thu</th><th class="schedule-day">Fri</th><th class="schedule-day">Sat</th></tr>
 
-                                    <option value="480">EST</option>
+                            <tr><th valign="top" rowspan="1">12 am</th>
+                                <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                            </tr>
 
-                                    <option value="420">CST</option>
+                            <tr><th valign="top" rowspan="1">1 am</th>
+                                <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                            </tr>
 
-                                    <option selected="selected" value="300">MST</option>
+                            <tr><th valign="top" rowspan="1">2 am</th>
+                                <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                            </tr>
 
-                                    <option value="240">PST</option>
+                            <tr><th valign="top" rowspan="1">3 am</th>
+                                <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                            </tr>
 
-                                </select>
-                            </th>
-                            <th class="schedule-day">MON 8/9</th><th class="schedule-day">TUES 8/10</th><th class="schedule-day">WED 8/11</th><th class="schedule-day">THU 8/12</th><th class="schedule-day">FRI 8/13</th><th class="schedule-day">SAT 8/14</th><th class="schedule-day">SUN 8/15</th>
-                        </tr>
+                            <tr><th valign="top" rowspan="1">4 am</th>
+                                <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                            </tr>
 
-                        <tr><th valign="top" rowspan="1">8 am</th>
-                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
-                        </tr>
+                            <tr><th valign="top" rowspan="1">5 am</th>
+                                <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                            </tr>
 
-                        <tr><th valign="top" rowspan="1">9 am</th>
-                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
-                        </tr>
+                            <tr><th valign="top" rowspan="1">6 am</th>
+                                <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                            </tr>
 
-                        <tr><th valign="top" rowspan="1">10 am</th>
-                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
-                        </tr>
+                            <tr><th valign="top" rowspan="1">7 am</th>
+                                <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                            </tr>
 
-                        <tr><th valign="top" rowspan="1">11 am</th>
-                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
-                        </tr>
+                            <tr><th valign="top" rowspan="1">8 am</th>
+                                <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                            </tr>
 
-                        <tr><th valign="top" rowspan="1">12 pm</th>
-                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
-                        </tr>
+                            <tr><th valign="top" rowspan="1">9 am</th>
+                                <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                            </tr>
 
-                        <tr><th valign="top" rowspan="1">1 pm</th>
-                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
-                        </tr>
+                            <tr><th valign="top" rowspan="1">10 am</th>
+                                <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                            </tr>
 
-                        <tr><th valign="top" rowspan="1">2 pm</th>
-                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
-                        </tr>
+                            <tr><th valign="top" rowspan="1">11 am</th>
+                                <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                            </tr>
 
-                        <tr><th valign="top" rowspan="1">3 pm</th>
-                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
-                        </tr>
-
-                        <tr><th valign="top" rowspan="1">4 pm</th>
-                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
-                        </tr>
-
-                        <tr><th valign="top" rowspan="1">5 pm</th>
-                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
-                        </tr>
-
-                        <tr><th valign="top" rowspan="1">6 pm</th>
-                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
-                        </tr>
-
-                        <tr><th valign="top" rowspan="1">7 pm</th>
-                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
-                        </tr>
-
-                    </tbody></table>
-                </div>
+                        </tbody></table>
+                    </div>
             </section>
         </form>
 
@@ -193,22 +172,92 @@
 
     <!-- END MAIN BODY -->
 
-</div>
 
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="./Sush-Cassie-Tim - AUDACY_files/plugins.js"></script>
+<script src="./Sush-Cassie-Tim - AUDACY_files/bootstrap.min.js"></script>
+<script src="./Sush-Cassie-Tim - AUDACY_files/jquery.nouislider.min.js"></script>
+<script src="./Sush-Cassie-Tim - AUDACY_files/main.js"></script>
 
-<script>window.jQuery || document.write('<script src="static/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="static/js/vendor/bootstrap.min.js"></script>
-<script src="static/js/main.js"></script>
+    
 
-
-
-
-
-
-
-
+<!-- SCHEDULING TABLE JS -->
 
 <script>
+
+$(".datepick").datepicker({
+  format: "mm-dd-yyyy",
+  autoclose:true
+});
+
+$("#new-start-time").timepicker({
+  'scrollDefaultNow': true,
+  'step': 15,
+  'forceRoundTime': true
+}).change(function(){
+  t = $("#new-start-time").val();
+  $('#new-end-time').timepicker('option', 'minTime', t);
+  $('#new-end-time').timepicker('option', 'durationTime', t);
+});
+
+$("#new-end-time").timepicker({
+  'scrollDefaultNow': true,
+  'step': 15,
+  'forceRoundTime': true,
+  'showDuration': true,
+  'durationTime': '8:00am'
+});
+
+$('#daily-timer-btn').click(function(){
+  $('#daily-timer-table, .daily-timers-instructions').removeClass('hide');
+  $('.schedule-increments, #daily-timer-actions').removeClass('hide');
+  $('#daily-timer-btn, #no-schedule').addClass('hide');
+});
+
+$('#close-daily-timer').click(function(){
+  $('#daily-timer-table, .daily-timers-instructions').addClass('hide');
+  $('.schedule-increments, #daily-timer-actions').addClass('hide');
+  $('#daily-timer-btn').removeClass('hide');
+});
+
+$('#date-timer-btn').click(function(){
+  $('.date-timer-form').toggleClass('hide');
+});
+
+
+  $(".slider1").noUiSlider({
+    range: [0, 10],
+    start: Math.floor((( 0 *100)+5)/10),
+    handles: 1,
+    connect: "lower",
+    step: 1
+  }).change( function () {
+    lvl = $(".slider1").val()*10;
+    setRoomLights(lvl);
+  });
+
+
+
+
+  var vtime= 15 ;
+  if(vtime>0) {
+    vtime=Math.min(Math.floor((vtime-5)/5),5);
+  }
+  $(".vacancy-sensor-slider").noUiSlider({
+    range: [0, 5],
+    start: Math.max(vtime,0),
+    handles: 1,
+    connect: "lower",
+    step: 1
+  }).change( function () {
+    lvl = $(".vacancy-sensor-slider").val();
+    if(lvl>0) {
+      lvl=lvl*5+5;
+    }
+    window.location.href='\/room\/152\/vacancy?timeout='+lvl;
+  });
+
+
 
 
 
@@ -252,7 +301,6 @@ $(function () {
         isMouseDown = true;
         $(this).toggleClass("highlighted");
         isHighlighted = $(this).hasClass("highlighted");
-        $(".btn-primary").removeAttr('disabled').addClass('animated pulse');
         return false; 
     })
         .mouseover(function () {
@@ -271,8 +319,70 @@ $(function () {
 });
 
 
-</script>
 
+
+function setRoomLights(level) {
+  var setURL="/async/rm/152/"+level;
+  $.ajax({url: setURL}).done(function(data){
+    
+    if(level>0) {
+      $('#on').prop('checked', true);
+      $('#off').prop('checked', false);
+      $(".slider1").val(Math.floor((level+5)/10));
+    } else {
+      $('#off').prop('checked', true);
+      $('#on').prop('checked', false);
+      $(".slider1").val(0);
+    }
+  });
+
+  return false;
+}
+
+function setMotionSensor(onoff) {
+  var setURL="/App/RoomMotionSensor?did=0\u0026rid=152"+"&occupancy="+onoff;
+  $.ajax({url: setURL});
+  return false;
+}
+
+function updateRoomInfo() {
+  $.ajax({url: "/async/rm/152"}).done(function(data){
+
+    
+    if(data.dim_level>0) {
+      $('#on').prop('checked', true);
+      $('#off').prop('checked', false);
+      $(".slider1").val(Math.floor((data.dim_level+5)/10));
+    } else {
+      $('#off').prop('checked', true);
+      $('#on').prop('checked', false);
+      $(".slider1").val(0);
+    }
+
+    
+    if(data.vacancy>0) {
+      var vtime=Math.floor((data.vacancy-5)/5);
+      $(".vacancy-sensor-slider").val(vtime);
+    } else {
+      $(".vacancy-sensor-slider").val(0);
+    }
+
+    
+    if(data.occupied>0) {
+      $(".room-status").html("Occupied");
+    } else {
+      $(".room-status").html("Unoccupied");
+    }
+
+    
+    setTimeout(updateRoomInfo, 5500);
+  })
+}
+
+
+setTimeout(updateRoomInfo, 10500);
+
+</script>
 
 </body>
 </html>
