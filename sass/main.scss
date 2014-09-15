@@ -134,12 +134,12 @@ textarea {
 
 
 html {
-    background-image:url('../img/bkg.jpg');
+    background-image:url('../img/bkg2.jpg');
     
 }
 
 body {
-    background-image:url('../img/bkg.jpg');
+    background-image:url('../img/bkg2.jpg');
     font-size: 14px;
     color: $tiel;
 }
@@ -231,6 +231,12 @@ a.message-btn.btn {
 
 .navbar-nav.navbar-right:last-child {
     margin-right: 0;
+}
+
+.nav>li {
+    @include breakpoint(mobile){
+        text-align: right;
+    }
 }
 
 // NAV BAR VC
@@ -651,19 +657,7 @@ li.chat-message {
 
 section.greeting-container, section.meet-by-container {
     border-bottom: 1px solid #ddd;
-    padding-bottom: 6px;
-}
-
-.scheduling-container input[type=radio], input[type=checkbox] {
-    margin-right: 10px;
-}
-
-.phone-label {
-    margin-right: 10px;
-}
-
-.scheduling-container .radio-inline {
-    margin-top: -4px;
+    padding-bottom: 10px;
 }
 
 .scheduling-container .btn-primary {
@@ -676,15 +670,22 @@ section.greeting-container, section.meet-by-container {
     font-weight: 900;
 }
 
-.meet-by-container {
+.meet-by-container, .scheduling-ui-container {
     padding-top: 20px;
     padding-bottom: 10px;
 }
 
 .time-zone-btn {
-    width: 70px;
+    width: 85px;
     background-color: white;
     border-color: white;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.table>tbody>tr>th.time-zone-cell {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .scheduling-table th {
@@ -698,6 +699,38 @@ section.greeting-container, section.meet-by-container {
 
 .scheduling-table .highlighted {
     background-color: $orange;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th {
+    padding: 12px;
+}
+
+.meet-by-container input[type="radio"] {
+    display:none;
+}
+.meet-by-container input[type="radio"] + label span {
+    display:inline-block;
+    width:22px;
+    height:22px;
+    border: 1px solid $tiel;
+    border-radius: 50px;
+    cursor:pointer;
+    vertical-align:middle;
+    margin-top: -4px;
+}
+.meet-by-container input[type="radio"]:checked + label span {
+    background-image: url('../img/check.png');
+    background-repeat: no-repeat;
+    background-position-y: 3px;
+    background-position-x: 2px;
+}
+
+.meet-by-container span {
+    margin-right: 10px;
+}
+
+.meet-by-container label {
+    margin-right: 20px;
 }
 
 /* ==========================================================================

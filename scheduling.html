@@ -102,14 +102,11 @@
         </section>
 
         <form role="form">
-            <section class="meet-by-container form-group">
+
+            <section class="meet-by-container form-inline" role="form">
                 <label class="meet-by control-label">meet by</label>
-                <label class="phone-label">
-                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="phone">Phone
-                </label>
-                <label >
-                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="video">Video
-                </label>
+                <input type="radio" id="phone" name="meet-select" value="yes" checked> <label for="phone" ><span></span>Phone</label>
+                <input type="radio" id="video" name="meet-select" value="yes" > <label for="video" ><span></span>Video</label>
             </section>
 
             <section class="scheduling-ui-container">
@@ -119,68 +116,146 @@
                     <table cellpadding="0" cellspacing="0" id="sched_table" class="scheduling-table table table-bordered">
                     <tbody>
                         <tr>
-                            <th>
+                            <th class="time-zone-cell">
                                 <select class="time-zone-btn dropdown" name="time-zone">
                                     <option disabled="">Select time zone</option>
 
-                                    <option value="480">EST</option>
+                                    <option value="480">Eastern</option>
 
-                                    <option value="420">CST</option>
+                                    <option value="420">Central</option>
 
-                                    <option selected="selected" value="300">MST</option>
+                                    <option selected="selected" value="300">Mountain</option>
 
-                                    <option value="240">PST</option>
+                                    <option value="240">Pacific</option>
 
                                 </select>
                             </th>
                             <th class="schedule-day">MON 8/9</th><th class="schedule-day">TUES 8/10</th><th class="schedule-day">WED 8/11</th><th class="schedule-day">THU 8/12</th><th class="schedule-day">FRI 8/13</th><th class="schedule-day">SAT 8/14</th><th class="schedule-day">SUN 8/15</th>
                         </tr>
 
-                        <tr><th valign="top" rowspan="1">8 am</th>
+                        <tr><th valign="top" rowspan="2">6 am</th>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+                        <tr>
                             <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
                         </tr>
 
-                        <tr><th valign="top" rowspan="1">9 am</th>
+                        <tr><th valign="top" rowspan="2">7 am</th>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+                        <tr>
                             <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
                         </tr>
 
-                        <tr><th valign="top" rowspan="1">10 am</th>
+                        <tr><th valign="top" rowspan="2">8 am</th>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+                        <tr>
                             <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
                         </tr>
 
-                        <tr><th valign="top" rowspan="1">11 am</th>
+                        <tr><th valign="top" rowspan="2">9 am</th>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+                        <tr>
                             <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
                         </tr>
 
-                        <tr><th valign="top" rowspan="1">12 pm</th>
+                        <tr><th valign="top" rowspan="2">10 am</th>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+                        <tr>
                             <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
                         </tr>
 
-                        <tr><th valign="top" rowspan="1">1 pm</th>
+                        <tr><th valign="top" rowspan="2">11 am</th>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+                        <tr>
                             <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
                         </tr>
 
-                        <tr><th valign="top" rowspan="1">2 pm</th>
+                        <tr><th valign="top" rowspan="2">12 pm</th>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+                        <tr>
                             <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
                         </tr>
 
-                        <tr><th valign="top" rowspan="1">3 pm</th>
+                        <tr><th valign="top" rowspan="2">1 pm</th>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+                        <tr>
                             <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
                         </tr>
 
-                        <tr><th valign="top" rowspan="1">4 pm</th>
+                        <tr><th valign="top" rowspan="2">2 pm</th>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+                        <tr>
                             <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
                         </tr>
 
-                        <tr><th valign="top" rowspan="1">5 pm</th>
+                        <tr><th valign="top" rowspan="2">3 pm</th>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+                        <tr>
                             <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
                         </tr>
 
-                        <tr><th valign="top" rowspan="1">6 pm</th>
+                        <tr><th valign="top" rowspan="2">4 pm</th>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+                        <tr>
                             <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
                         </tr>
 
-                        <tr><th valign="top" rowspan="1">7 pm</th>
+                        <tr><th valign="top" rowspan="2">5 pm</th>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+                        <tr>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+
+                        <tr><th valign="top" rowspan="2">6 pm</th>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+                        <tr>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+
+                        <tr><th valign="top" rowspan="2">7 pm</th>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+                        <tr>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+
+                        <tr><th valign="top" rowspan="2">8 pm</th>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+                        <tr>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+
+                        <tr><th valign="top" rowspan="2">9 pm</th>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+                        <tr>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+
+                        <tr><th valign="top" rowspan="2">10 pm</th>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+                        <tr>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+
+                        <tr><th valign="top" rowspan="2">11 pm</th>
+                            <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                        </tr>
+                        <tr>
                             <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
                         </tr>
 
