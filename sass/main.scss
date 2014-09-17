@@ -707,6 +707,10 @@ section.greeting-container, section.meet-by-container {
     background-color: $orange;
 }
 
+.scheduling-table .highlighted.selected {
+    background-color: $bright-tiel;
+}
+
 .table>tbody>tr>td, .table>tbody>tr>th {
     padding: 12px;
 }
