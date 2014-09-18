@@ -138,7 +138,7 @@ ul {
 
 /* line 165, ../../sass/main.scss */
 a {
-  color: #008b9d;
+  color: #00b3cb;
 }
 
 /* line 171, ../../sass/main.scss */
@@ -1131,7 +1131,7 @@ section.greeting-container, section.meet-by-container {
 /* line 965, ../../sass/main.scss */
 .bio {
   text-align: left;
-  width: 580px;
+  max-width: 580px;
   margin: 10px auto;
 }
 @media (max-width: 992px) {
@@ -1141,13 +1141,63 @@ section.greeting-container, section.meet-by-container {
   }
 }
 
+/* line 976, ../../sass/main.scss */
+.qa-module a {
+  display: block;
+  font-weight: 900;
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 14px;
+  text-align: left;
+  color: #00b3cb;
+}
+
+/* line 987, ../../sass/main.scss */
+h4 {
+  color: #ff7a00;
+  margin-top: 30px;
+}
+
+/* line 992, ../../sass/main.scss */
+p.date {
+  color: #999999;
+  margin-bottom: 10px;
+}
+
+/* line 997, ../../sass/main.scss */
+p.address {
+  color: #999999;
+  margin: 0;
+}
+
+/* line 1002, ../../sass/main.scss */
+.contact-module {
+  position: relative;
+}
+
+/* line 1006, ../../sass/main.scss */
+.contact-cover {
+  position: absolute;
+  height: 50%;
+  width: 300px;
+  left: 32%;
+  z-index: 99;
+  background-color: white;
+}
+
+/* line 1015, ../../sass/main.scss */
+.contact-cover button {
+  margin-top: 20px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 /*
  * Image replacement
  */
-/* line 982, ../../sass/main.scss */
+/* line 1028, ../../sass/main.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -1156,7 +1206,7 @@ section.greeting-container, section.meet-by-container {
   *text-indent: -9999px;
 }
 
-/* line 990, ../../sass/main.scss */
+/* line 1036, ../../sass/main.scss */
 .ir:before {
   content: "";
   display: block;
@@ -1167,7 +1217,7 @@ section.greeting-container, section.meet-by-container {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 1001, ../../sass/main.scss */
+/* line 1047, ../../sass/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -1176,7 +1226,7 @@ section.greeting-container, section.meet-by-container {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 1010, ../../sass/main.scss */
+/* line 1056, ../../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1192,7 +1242,7 @@ section.greeting-container, section.meet-by-container {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 1027, ../../sass/main.scss */
+/* line 1073, ../../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -1206,7 +1256,7 @@ section.greeting-container, section.meet-by-container {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 1040, ../../sass/main.scss */
+/* line 1086, ../../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -1222,7 +1272,7 @@ section.greeting-container, section.meet-by-container {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 1057, ../../sass/main.scss */
+/* line 1103, ../../sass/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -1231,7 +1281,7 @@ section.greeting-container, section.meet-by-container {
   /* 2 */
 }
 
-/* line 1062, ../../sass/main.scss */
+/* line 1108, ../../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -1240,7 +1290,7 @@ section.greeting-container, section.meet-by-container {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 1071, ../../sass/main.scss */
+/* line 1117, ../../sass/main.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -1261,7 +1311,7 @@ section.greeting-container, section.meet-by-container {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 1098, ../../sass/main.scss */
+  /* line 1144, ../../sass/main.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -1270,18 +1320,18 @@ section.greeting-container, section.meet-by-container {
     text-shadow: none !important;
   }
 
-  /* line 1106, ../../sass/main.scss */
+  /* line 1152, ../../sass/main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 1110, ../../sass/main.scss */
+  /* line 1156, ../../sass/main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 1114, ../../sass/main.scss */
+  /* line 1160, ../../sass/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -1289,33 +1339,33 @@ section.greeting-container, section.meet-by-container {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 1124, ../../sass/main.scss */
+  /* line 1170, ../../sass/main.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 1129, ../../sass/main.scss */
+  /* line 1175, ../../sass/main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 1134, ../../sass/main.scss */
+  /* line 1180, ../../sass/main.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 1139, ../../sass/main.scss */
+  /* line 1185, ../../sass/main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 1143, ../../sass/main.scss */
+  /* line 1189, ../../sass/main.scss */
   img {
     max-width: 100% !important;
   }
@@ -1324,7 +1374,7 @@ section.greeting-container, section.meet-by-container {
     margin: 0.5cm;
 }
 
-  /* line 1153, ../../sass/main.scss */
+  /* line 1199, ../../sass/main.scss */
   p,
   h2,
   h3 {
@@ -1332,7 +1382,7 @@ section.greeting-container, section.meet-by-container {
     widows: 3;
   }
 
-  /* line 1159, ../../sass/main.scss */
+  /* line 1205, ../../sass/main.scss */
   h2,
   h3 {
     page-break-after: avoid;

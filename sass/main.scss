@@ -163,7 +163,7 @@ ul {
     list-style-type: none;
 }
  a {
-    color: $tiel;
+    color: $tiel2;
  }
 
 // TYPOGRAPHY
@@ -964,12 +964,58 @@ section.greeting-container, section.meet-by-container {
 
 .bio {
     text-align: left;
-    width: 580px;
+    max-width: 580px;
     margin: 10px auto;
     @include breakpoint(large){
         width: 90%;
     }
 }
+
+// QA MODULE
+
+.qa-module a {
+    display: block;
+    font-weight: 900;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 14px;
+    text-align: left;
+    color: $tiel2;
+}
+
+h4 {
+    color: $orange;
+    margin-top: 30px;
+}
+
+p.date {
+    color: $grey;
+    margin-bottom: 10px;
+}
+
+p.address {
+    color: $grey;
+    margin: 0;
+}
+
+.contact-module {
+    position: relative;
+}
+
+.contact-cover {
+    position: absolute;
+    height: 50%;
+    width: 300px;
+    left: 32%;
+    z-index: 99;
+    background-color: white;
+}
+
+.contact-cover button {
+    margin-top: 20px;
+}
+
 
 /* ==========================================================================
    Helper classes
