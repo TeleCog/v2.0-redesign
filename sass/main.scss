@@ -253,7 +253,7 @@ a.message-btn.btn {
     background-color: white;
     border: 1px solid #ddd;
     margin: 0;
-    padding: 10px 0;
+    padding: 10px 0 10px 20px;
 }
 
 .vc-screen .navbar-header {
@@ -312,8 +312,8 @@ a.message-btn.btn {
 }
 
 .vc-with.navbar-text {
-    margin-left: 30px;
-    margin-right: -6px;
+    margin-left: 0px;
+    margin-right: -2px;
     text-transform: lowercase;
     font-size: 16px;
     font-style: italic;
@@ -327,6 +327,18 @@ a.message-btn.btn {
 .vc-with, .vc-name {
     @include breakpoint(mobile){
         display: none;
+    }
+}
+
+.vc-screen .nav li {
+    @include breakpoint(mobile){
+        display: inline-block;
+    }
+}
+
+.vc-screen ul.nav {
+    @include breakpoint(mobile){
+        text-align: center;
     }
 }
 
