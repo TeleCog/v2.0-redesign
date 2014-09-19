@@ -1007,14 +1007,38 @@ p.address {
     position: absolute;
     height: 50%;
     width: 300px;
-    left: 32%;
+    left: 50%;
     z-index: 99;
     background-color: white;
+    margin-left: -150px;
 }
 
 .contact-cover button {
     margin-top: 20px;
 }
+
+.zocial.icon {
+    @include border-radius(50%);
+    margin: 0 5px;
+}
+
+.hours-module table {
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.hours-module td {
+    width: 100px;
+}
+
+.hours-module td.day {
+    color: $orange;
+}
+
+.hours-module td.time {
+    color: $grey;
+}
+
 
 
 /* ==========================================================================

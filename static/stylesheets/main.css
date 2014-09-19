@@ -1181,14 +1181,46 @@ p.address {
   position: absolute;
   height: 50%;
   width: 300px;
-  left: 32%;
+  left: 50%;
   z-index: 99;
   background-color: white;
+  margin-left: -150px;
 }
 
-/* line 1015, ../../sass/main.scss */
+/* line 1016, ../../sass/main.scss */
 .contact-cover button {
   margin-top: 20px;
+}
+
+/* line 1020, ../../sass/main.scss */
+.zocial.icon {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+/* line 1025, ../../sass/main.scss */
+.hours-module table {
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+/* line 1030, ../../sass/main.scss */
+.hours-module td {
+  width: 100px;
+}
+
+/* line 1034, ../../sass/main.scss */
+.hours-module td.day {
+  color: #ff7a00;
+}
+
+/* line 1038, ../../sass/main.scss */
+.hours-module td.time {
+  color: #999999;
 }
 
 /* ==========================================================================
@@ -1197,7 +1229,7 @@ p.address {
 /*
  * Image replacement
  */
-/* line 1028, ../../sass/main.scss */
+/* line 1052, ../../sass/main.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -1206,7 +1238,7 @@ p.address {
   *text-indent: -9999px;
 }
 
-/* line 1036, ../../sass/main.scss */
+/* line 1060, ../../sass/main.scss */
 .ir:before {
   content: "";
   display: block;
@@ -1217,7 +1249,7 @@ p.address {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 1047, ../../sass/main.scss */
+/* line 1071, ../../sass/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -1226,7 +1258,7 @@ p.address {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 1056, ../../sass/main.scss */
+/* line 1080, ../../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1242,7 +1274,7 @@ p.address {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 1073, ../../sass/main.scss */
+/* line 1097, ../../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -1256,7 +1288,7 @@ p.address {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 1086, ../../sass/main.scss */
+/* line 1110, ../../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -1272,7 +1304,7 @@ p.address {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 1103, ../../sass/main.scss */
+/* line 1127, ../../sass/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -1281,7 +1313,7 @@ p.address {
   /* 2 */
 }
 
-/* line 1108, ../../sass/main.scss */
+/* line 1132, ../../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -1290,7 +1322,7 @@ p.address {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 1117, ../../sass/main.scss */
+/* line 1141, ../../sass/main.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -1311,7 +1343,7 @@ p.address {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 1144, ../../sass/main.scss */
+  /* line 1168, ../../sass/main.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -1320,18 +1352,18 @@ p.address {
     text-shadow: none !important;
   }
 
-  /* line 1152, ../../sass/main.scss */
+  /* line 1176, ../../sass/main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 1156, ../../sass/main.scss */
+  /* line 1180, ../../sass/main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 1160, ../../sass/main.scss */
+  /* line 1184, ../../sass/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -1339,33 +1371,33 @@ p.address {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 1170, ../../sass/main.scss */
+  /* line 1194, ../../sass/main.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 1175, ../../sass/main.scss */
+  /* line 1199, ../../sass/main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 1180, ../../sass/main.scss */
+  /* line 1204, ../../sass/main.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 1185, ../../sass/main.scss */
+  /* line 1209, ../../sass/main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 1189, ../../sass/main.scss */
+  /* line 1213, ../../sass/main.scss */
   img {
     max-width: 100% !important;
   }
@@ -1374,7 +1406,7 @@ p.address {
     margin: 0.5cm;
 }
 
-  /* line 1199, ../../sass/main.scss */
+  /* line 1223, ../../sass/main.scss */
   p,
   h2,
   h3 {
@@ -1382,7 +1414,7 @@ p.address {
     widows: 3;
   }
 
-  /* line 1205, ../../sass/main.scss */
+  /* line 1229, ../../sass/main.scss */
   h2,
   h3 {
     page-break-after: avoid;

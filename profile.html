@@ -31,6 +31,7 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300|Roboto:400,900' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="static/stylesheets/normalize.css">
 <link rel="stylesheet" href="static/stylesheets/animate.css">
+<link rel="stylesheet" href="static/stylesheets/zocial.css">
 <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">        
 <link rel="stylesheet" href="static/stylesheets/main.css">
 
@@ -166,6 +167,47 @@
             <p class="address">Chicago, IL 60622</p>
         </section>
 
+        <section class="profile-module">
+            <h2>social</h2>
+            <a href="#" class="zocial icon facebook"></a>
+            <a href="#" class="zocial icon twitter"></a>
+            <a href="#" class="zocial icon linkedin"></a>
+        </section>
+
+        <section class="profile-module">
+            <h2>business info</h2>
+            <h4>Dezign of Mine LLC</h4>
+            <p class="date">Rock Star Design</p>
+            <a href="#"><h5>DezignOfMine.com</h5></a>
+            <p class="date">Established 2006</p>
+        </section>
+
+        <section class="profile-module hours-module">
+            <h2>hours of operation</h2>
+            <table class="table table-bordered">
+                <tr>
+                    <td class="day">Monday</td>
+                    <td class="time">8 am - 5pm</td>
+                </tr>
+                <tr>
+                    <td class="day">Tuesday</td>
+                    <td class="time">8 am - 5pm</td>
+                </tr>
+                <tr>
+                    <td class="day">Wednesday</td>
+                    <td class="time">8 am - 5pm</td>
+                </tr>
+                <tr>
+                    <td class="day">Thursday</td>
+                    <td class="time">8 am - 5pm</td>
+                </tr>
+                <tr>
+                    <td class="day">Friday</td>
+                    <td class="time">8 am - 5pm</td>
+                </tr>
+            </table>
+        </section>
+
     </div>
 
     <!-- END MAIN BODY -->
@@ -177,78 +219,6 @@
 <script src="static/js/vendor/bootstrap.min.js"></script>
 <script src="static/js/main.js"></script>
 
-
-
-
-
-
-
-
-
-<script>
-
-
-
-
-function save_schedule() {
-  var weeks = ["","","","","","",""];
-  var tds = $("#sched_table td").each(function(i,b){
-    if($(b).hasClass("highlighted")){
-      weeks[i%7]+="1";
-    }else {
-      weeks[i%7]+="0";
-    }
-  });
-  var matrix=weeks.join("\n");
-  $("#sched_bits").val(matrix);
-  $("#sched_form").submit();
-}
-
-function load_schedule() {
-  var weeks = $("#sched_bits").val().split("\n");
-  var tds = $("#sched_table td").each(function(i,b){
-    if( weeks[i%7].charAt(Math.floor(i/7))=='1' ) {
-      $(b).addClass("highlighted");
-    }else {
-      $(b).removeClass("highlighted");
-    }
-  });
-}
-
-function clear_schedule() {
-  var tds = $("#sched_table td").each(function(i,b){
-    $(b).removeClass("highlighted");
-  });
-}
-
-$(function () {
-    var isMouseDown = false,
-        isHighlighted;
-    $("#sched_table td")
-        .mousedown(function () {
-        isMouseDown = true;
-        $(this).toggleClass("highlighted");
-        isHighlighted = $(this).hasClass("highlighted");
-        $(".btn-primary").removeAttr('disabled').addClass('animated pulse');
-        return false; 
-    })
-        .mouseover(function () {
-        if (isMouseDown) {
-            $(this).toggleClass("highlighted", isHighlighted);
-        }
-    })
-        .bind("selectstart", function () {
-        return false;
-    });
-
-    $(document)
-        .mouseup(function () {
-        isMouseDown = false;
-    });
-});
-
-
-</script>
 
 
 </body>
