@@ -142,7 +142,8 @@ html {
 body {
     background-image:url('../img/bkg2.jpg');
     font-size: 14px;
-    color: $tiel;
+    color: $tiel2;
+    padding-bottom: 50px;
 }
 
 
@@ -163,6 +164,12 @@ ul {
     list-style-type: none;
 }
  a {
+    color: $tiel2;
+ }
+
+ .dropdown {
+    background-color: white;
+    border-color: white;
     color: $tiel2;
  }
 
@@ -372,7 +379,6 @@ a.message-btn.btn {
 
 .dashboard-module h3, .vc-screen h3 {
     font-family: 'Roboto Slab', serif;
-    color: $tiel;
     text-transform: uppercase;
     font-size: 1.3em;
     font-weight: bold;
@@ -673,7 +679,7 @@ li.chat-message {
     }
 }
 
-section.greeting-container, section.meet-by-container {
+.greeting-container, .meet-by-container {
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
 }
@@ -688,15 +694,13 @@ section.greeting-container, section.meet-by-container {
     font-weight: 900;
 }
 
-.meet-by-container, .scheduling-ui-container {
+.meet-by-container, .scheduling-ui-container, .reco-results-container {
     padding-top: 20px;
     padding-bottom: 10px;
 }
 
 .time-zone-btn {
     width: 85px;
-    background-color: white;
-    border-color: white;
     font-size: 10px;
     text-transform: uppercase;
 }
@@ -753,6 +757,107 @@ section.greeting-container, section.meet-by-container {
 
 .meet-by-container label {
     margin-right: 20px;
+}
+
+
+// RECOS
+
+.recos-container {
+    padding-bottom: 10px;
+}
+
+.recos-container h3 {
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 20px;
+    @include breakpoint(mobile){
+        font-size: 16px;
+    }
+}
+
+.recos-container .btn-primary {
+    margin-bottom: 0;
+}
+
+.recos-container p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: $bright-tiel;
+}
+
+.recos-container .btn {
+    padding: 10px 16px;
+}
+
+
+form.reco-filters {
+    line-height: 40px;
+}
+
+.available-status {
+    text-transform: uppercase;
+    display: none;
+    margin-top: 12px;
+    font-weight: 300;
+}
+
+.available-now, .available-now a p, .available-now a span {
+    color: $orange;
+}
+
+.available-now .btn-primary {
+    border-color: $orange;
+    color: $orange;
+}
+
+.available-now .profile-img {
+    border-color: $orange;
+}
+
+.available-now .btn-primary:hover {
+    background-color: $orange;
+    color: white;
+}
+
+.available-now .available-status {
+    display: block;
+}
+
+.recos-container a {
+    text-decoration: none;
+}
+
+.recos-container .profile-img {
+    @include breakpoint(mobile){
+        margin-top: 30px;
+        width: 140px;
+        height: 140px;
+    }
+}
+
+.recos-container ul {
+    padding-left: 0;
+}
+
+.more-recos-container {
+    text-align: center;
+    padding: 30px;
+}
+
+.more-recos-container .profile-img {
+    width: 140px;
+    height: 140px;
+}
+
+#show-more-recos {
+    border-color: $grey;
+    color: $grey;
+    background-color: transparent;
+}
+
+#show-more-recos:hover {
+    background-color: $grey;
+    color: white;
 }
 
 
