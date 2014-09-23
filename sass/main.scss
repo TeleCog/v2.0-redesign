@@ -1145,6 +1145,65 @@ p.address {
 }
 
 
+// ACCOUNT SIGNUP
+
+.sign-up-form label {
+    color: $tiel2;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 0 0 0 40px;
+}
+
+.form-list .columns li {
+    border: 1px solid $tiel2;
+}
+
+.account-form-container h2 {
+    text-transform: uppercase;
+    border-bottom: 1px solid $grey;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.sign-up-form .form-control {
+    border: 1px solid $tiel2;
+}
+
+.un-focus {
+    opacity: .2;
+}
+
+.form-list .item {
+    font-size: 18px;
+    top: -4px;
+}
+
+.item {
+    left: 0;
+}
+
+.progress {
+    border: 1px solid;
+}
+
+.progress-bar {
+    background-color: $bright-tiel;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+#footer .progress {
+    height: 30px;
+    left: 50%;
+    margin-left: -120px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+#footer {
+    background-color: white;
+}
+
 
 /* ==========================================================================
    Helper classes
