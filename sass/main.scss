@@ -928,7 +928,8 @@ form.reco-filters {
     padding: 4px 50px 6px 24px;
     background: url("../img/map.png") 0 center no-repeat;
     @include breakpoint(mobile){
-        padding-right: 20px;
+        padding-right: 10px;
+        padding-left: 20px;
     }
 }
 
@@ -942,6 +943,11 @@ form.reco-filters {
 .available-by img {
     margin-left: 6px;
     display: none;
+    @include breakpoint(mobile){
+        margin-left: 0;
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .available-by img.by-phone {
@@ -1076,6 +1082,10 @@ form.reco-filters {
     }
 }
 
+.welcome {
+    font-weight: 900;
+}
+
 // QA MODULE
 
 .qa-module a, .qa-module p, {
@@ -1111,11 +1121,11 @@ p.address {
 .contact-cover {
     position: absolute;
     height: 50%;
-    width: 300px;
+    width: 280px;
     left: 50%;
     z-index: 99;
     background-color: white;
-    margin-left: -150px;
+    margin-left: -140px;
 }
 
 .contact-cover button {
