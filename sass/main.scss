@@ -969,7 +969,7 @@ form.reco-filters {
 }
 
 .cred-tag {
-    border: 1px solid #bbb;
+    border: 1px solid #ddd;
     @include border-radius(4px);
     background-color: #fbfbfb;
     padding: 0 8px;
@@ -1078,7 +1078,7 @@ form.reco-filters {
 
 // QA MODULE
 
-.qa-module a {
+.qa-module a, .qa-module p, {
     display: block;
     font-weight: 900;
     max-width: 580px;
@@ -1142,6 +1142,18 @@ p.address {
 
 .hours-module td.time {
     color: $grey;
+}
+
+p.answer {
+    font-weight: 400;
+    margin-top: -14px;
+}
+
+p.question {
+    font-size: 18px;
+    line-height: 30px;
+    color: $orange;
+    font-weight: 400;
 }
 
 
