@@ -901,6 +901,19 @@ form.reco-filters {
     position: relative;
     bottom: -28px;
     margin-top: -18px;
+    width: 90%;
+    max-width: 393px;
+    @include breakpoint(mobile){
+        font-size: 14px;
+    }
+}
+
+.account-header .talk-live {
+    background-color: $orange;
+    border-color: $orange;
+    @include breakpoint(mobile){
+        margin-top: 10px;
+    }
 }
 
 .profile-name {
@@ -1082,9 +1095,6 @@ form.reco-filters {
     }
 }
 
-.welcome {
-    font-weight: 900;
-}
 
 // QA MODULE
 
