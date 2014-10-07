@@ -17,3 +17,11 @@ $("#show-more-recos").click (function (){
 $('.carousel').carousel({
 	interval: 3500
 });
+
+
+// SCROLLING EFFECT VIA WAYPOINTS
+
+$('#test').waypoint(function() {
+	console.log('test');
+	$("footer").toggleClass('fixed animated fadeInUpBig');
+});

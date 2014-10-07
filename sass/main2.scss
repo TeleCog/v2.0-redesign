@@ -589,6 +589,7 @@ footer h2 {
     margin-right: 30px;
     @include breakpoint(mobile){
         display: block;
+        line-height: 50px;
     }
 }
 
@@ -603,6 +604,15 @@ footer a {
 
 .footer-container {
     text-align: center;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    @include breakpoint(mobile){
+
+    }
 }
 
 /* ==========================================================================
