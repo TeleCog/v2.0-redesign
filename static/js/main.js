@@ -11,3 +11,9 @@ $("#show-more-recos").click (function (){
 	$(this).toggleClass("hide");
 	$(".more-recos").toggleClass("hide").addClass("animated fadeIn");
 });
+
+// CAROUSEL
+
+$('.carousel').carousel({
+	interval: 3500
+});
