@@ -287,7 +287,7 @@ a.message-btn.btn {
     margin-top: -70px;
 }
 
-.carousel-caption h1 {
+.carousel-caption h1, .cta-container h1 {
     margin: 0;
     font-size: 32px;
     text-shadow: none;
@@ -345,6 +345,34 @@ body,
 
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
     width: 100%;
+}
+
+.cta-container {
+    position: absolute;
+    top: 130px;
+    right: 90px;
+    z-index: 999;
+    text-align: center;
+}
+
+.cta-container p {
+    margin-top: 60px;
+    color: $grey2;
+    text-shadow: none;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.carousel-caption2 {
+    position: absolute;
+    top: 182px;
+    right: 203px;
+    z-index: 9999;
+    font-weight: 900;
+}
+
+.carousel-caption2.office {
+    right: 188px;
 }
 
 
