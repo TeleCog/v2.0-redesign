@@ -105,7 +105,7 @@ textarea {
 body {
   font-size: 14px;
   color: #454c64;
-  padding-bottom: 50px;
+  padding-bottom: 0;
 }
 
 /* line 153, ../../sass/main2.scss */
@@ -345,7 +345,7 @@ section {
 }
 
 /* line 358, ../../sass/main2.scss */
-section h2 {
+section h2, .livewire-saves h2 {
   margin-top: 0;
   margin-bottom: 5px;
 }
@@ -401,46 +401,60 @@ ul {
 .fp-list h3 {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
+  margin-bottom: 0;
 }
 
-/* line 414, ../../sass/main2.scss */
+/* line 415, ../../sass/main2.scss */
 .fp-list h4 {
   margin-top: 4px;
   font-size: 14px;
 }
 
-/* line 419, ../../sass/main2.scss */
+/* line 420, ../../sass/main2.scss */
 .fp-list h4, .fp-list h3 {
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
 }
 
-/* line 427, ../../sass/main2.scss */
+/* line 428, ../../sass/main2.scss */
 .how-to-livewire ul, .makes-it-easy ul {
-  margin-top: 50px;
+  margin: 50px auto 0 auto;
+  max-width: 1024px;
 }
 
-/* line 431, ../../sass/main2.scss */
+/* line 433, ../../sass/main2.scss */
 .how-to-livewire img {
   margin-bottom: 20px;
 }
 
-/* line 435, ../../sass/main2.scss */
+/* line 437, ../../sass/main2.scss */
 .how-to-livewire p {
   max-width: 240px;
   margin: 0 auto;
 }
 
-/* line 440, ../../sass/main2.scss */
+/* line 442, ../../sass/main2.scss */
+.makes-it-easy p {
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+/* line 447, ../../sass/main2.scss */
+.how-to-livewire p, .makes-it-easy p {
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+/* line 452, ../../sass/main2.scss */
 img.pens {
   margin-top: 53px;
 }
 
-/* line 444, ../../sass/main2.scss */
+/* line 456, ../../sass/main2.scss */
 img.glasses {
   margin-top: 52px;
 }
 
-/* line 448, ../../sass/main2.scss */
+/* line 460, ../../sass/main2.scss */
 .vc-ipad-bkg {
   background: url(../img/mobilefacetoface.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -450,78 +464,78 @@ img.glasses {
   height: 600px;
 }
 
-/* line 457, ../../sass/main2.scss */
+/* line 469, ../../sass/main2.scss */
 .makes-it-easy li h4, .how-to-livewire li h4 {
   font-weight: 700;
   font-size: 20px;
 }
 
-/* line 462, ../../sass/main2.scss */
+/* line 474, ../../sass/main2.scss */
 .makes-it-easy li {
   padding: 0 40px;
 }
 
-/* line 466, ../../sass/main2.scss */
+/* line 478, ../../sass/main2.scss */
 img.devices {
   margin-top: 60px;
 }
 
-/* line 473, ../../sass/main2.scss */
+/* line 486, ../../sass/main2.scss */
 .livewire-saves, .avg-tax-fees {
   height: 840px;
   text-align: center;
 }
 
-/* line 478, ../../sass/main2.scss */
+/* line 491, ../../sass/main2.scss */
 .livewire-saves {
   background-color: #454c64;
   color: #EFEFEF;
   padding: 240px 60px 0 60px;
 }
 
-/* line 484, ../../sass/main2.scss */
+/* line 497, ../../sass/main2.scss */
 .livewire-saves img {
   margin-bottom: 20px;
 }
 
-/* line 488, ../../sass/main2.scss */
+/* line 501, ../../sass/main2.scss */
 .livewire-saves h2 {
   color: #EFEFEF;
 }
 
-/* line 492, ../../sass/main2.scss */
+/* line 505, ../../sass/main2.scss */
 .livewire-saves p {
   line-height: 30px;
 }
 
-/* line 496, ../../sass/main2.scss */
+/* line 509, ../../sass/main2.scss */
 .avg-tax-fees {
   background-color: #EFEFEF;
   padding: 60px 50px 0 50px;
   color: #4F4F4F;
 }
 
-/* line 502, ../../sass/main2.scss */
+/* line 515, ../../sass/main2.scss */
 .avg-tax-fees img {
   margin-top: 40px;
 }
 
-/* line 506, ../../sass/main2.scss */
+/* line 519, ../../sass/main2.scss */
 .press {
   margin: 40px auto 0 auto;
 }
 
-/* line 513, ../../sass/main2.scss */
+/* line 526, ../../sass/main2.scss */
 .people-are-talking {
   background-color: #454c64;
 }
 
-/* line 517, ../../sass/main2.scss */
+/* line 530, ../../sass/main2.scss */
 .people-are-talking h2, .people-are-talking h6 {
   color: #c0a888;
 }
 
-/* line 521, ../../sass/main2.scss */
+/* line 534, ../../sass/main2.scss */
 .people-are-talking h6 {
   position: absolute;
   bottom: 10px;
@@ -529,28 +543,28 @@ img.devices {
   right: 0;
 }
 
-/* line 528, ../../sass/main2.scss */
+/* line 541, ../../sass/main2.scss */
 .people-are-talking h2 {
   margin-bottom: 60px;
 }
 
-/* line 532, ../../sass/main2.scss */
+/* line 545, ../../sass/main2.scss */
 .people-are-talking a {
   color: #5EA9DD;
 }
 
-/* line 536, ../../sass/main2.scss */
+/* line 549, ../../sass/main2.scss */
 .twitter-icon, .twitter-link {
   display: block;
   margin: 0 auto;
 }
 
-/* line 541, ../../sass/main2.scss */
+/* line 554, ../../sass/main2.scss */
 .twitter-icon {
   margin-bottom: 4px;
 }
 
-/* line 545, ../../sass/main2.scss */
+/* line 558, ../../sass/main2.scss */
 .tweet-container {
   background-color: white;
   -webkit-border-radius: 4px;
@@ -568,7 +582,7 @@ img.devices {
   position: relative;
 }
 
-/* line 558, ../../sass/main2.scss */
+/* line 571, ../../sass/main2.scss */
 .people-are-talking h5 {
   font-size: 18px;
   margin-top: 20px;
@@ -578,14 +592,14 @@ img.devices {
   right: 0;
 }
 
-/* line 567, ../../sass/main2.scss */
+/* line 580, ../../sass/main2.scss */
 .people-are-talking h6 {
   font-size: 14px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
 }
 
-/* line 573, ../../sass/main2.scss */
+/* line 586, ../../sass/main2.scss */
 .tri-down {
   /* Styling block element, not required */
   position: relative;
@@ -596,7 +610,7 @@ img.devices {
 }
 
 /* Required for Down Triangle */
-/* line 584, ../../sass/main2.scss */
+/* line 597, ../../sass/main2.scss */
 .tri-down:before, .tri-down:after {
   content: "";
   position: absolute;
@@ -608,7 +622,7 @@ img.devices {
 }
 
 /* Stroke */
-/* line 595, ../../sass/main2.scss */
+/* line 608, ../../sass/main2.scss */
 .tri-down:before {
   bottom: -18px;
   left: 149px;
@@ -617,7 +631,7 @@ img.devices {
 }
 
 /* Fill */
-/* line 603, ../../sass/main2.scss */
+/* line 616, ../../sass/main2.scss */
 .tri-down:after {
   bottom: -15px;
   left: 152px;
@@ -625,7 +639,7 @@ img.devices {
   border-width: 15px;
 }
 
-/* line 610, ../../sass/main2.scss */
+/* line 623, ../../sass/main2.scss */
 .twitter-user-img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -635,32 +649,32 @@ img.devices {
   border: 2px solid #c0a888;
 }
 
-/* line 617, ../../sass/main2.scss */
+/* line 630, ../../sass/main2.scss */
 .where-is .table {
   max-width: 640px;
   margin: 70px auto 0 auto;
   font-size: 18px;
 }
 
-/* line 623, ../../sass/main2.scss */
+/* line 636, ../../sass/main2.scss */
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
   border-top: none;
   width: 200px;
   height: 48px;
 }
 
-/* line 631, ../../sass/main2.scss */
+/* line 644, ../../sass/main2.scss */
 .header-fixed {
   background-color: #EFEFEF;
 }
 @media (max-width: 768px) {
-  /* line 631, ../../sass/main2.scss */
+  /* line 644, ../../sass/main2.scss */
   .header-fixed {
     padding-bottom: 20px;
   }
 }
 
-/* line 638, ../../sass/main2.scss */
+/* line 651, ../../sass/main2.scss */
 .header-fixed h2 {
   display: inline-block;
   margin: 0;
@@ -668,60 +682,60 @@ img.devices {
   margin-right: 30px;
 }
 @media (max-width: 768px) {
-  /* line 638, ../../sass/main2.scss */
+  /* line 651, ../../sass/main2.scss */
   .header-fixed h2 {
     display: block;
     line-height: 50px;
   }
 }
 
-/* line 649, ../../sass/main2.scss */
+/* line 662, ../../sass/main2.scss */
 .header-fixed a {
   margin-top: -14px;
   margin-right: 20px;
 }
 @media (max-width: 768px) {
-  /* line 649, ../../sass/main2.scss */
+  /* line 662, ../../sass/main2.scss */
   .header-fixed a {
     margin: 0 auto;
   }
 }
 
-/* line 658, ../../sass/main2.scss */
+/* line 671, ../../sass/main2.scss */
 .header-fixed-container {
   text-align: center;
 }
 
-/* line 662, ../../sass/main2.scss */
+/* line 675, ../../sass/main2.scss */
 .fixed {
   position: fixed;
   width: 100%;
   bottom: 0;
 }
 
-/* line 674, ../../sass/main2.scss */
+/* line 687, ../../sass/main2.scss */
 footer {
   background-color: #454c64;
   color: white;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 30px;
   font-family: 'Raleway', sans-serif;
 }
 
-/* line 682, ../../sass/main2.scss */
+/* line 695, ../../sass/main2.scss */
 footer a, footer a:hover {
   color: white;
 }
 
-/* line 686, ../../sass/main2.scss */
+/* line 699, ../../sass/main2.scss */
 footer .table {
-  width: 60%;
+  width: 50%;
   margin: 20px auto;
 }
 
-/* line 691, ../../sass/main2.scss */
-footer .table > thead > tr > th {
-  height: 0;
+/* line 704, ../../sass/main2.scss */
+footer .table > thead > tr > th, footer .table > thead > tr > td {
+  height: 0px;
 }
 
 /* ==========================================================================
@@ -730,7 +744,7 @@ footer .table > thead > tr > th {
 /*
  * Image replacement
  */
-/* line 703, ../../sass/main2.scss */
+/* line 716, ../../sass/main2.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -739,7 +753,7 @@ footer .table > thead > tr > th {
   *text-indent: -9999px;
 }
 
-/* line 711, ../../sass/main2.scss */
+/* line 724, ../../sass/main2.scss */
 .ir:before {
   content: "";
   display: block;
@@ -750,7 +764,7 @@ footer .table > thead > tr > th {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 722, ../../sass/main2.scss */
+/* line 735, ../../sass/main2.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -759,7 +773,7 @@ footer .table > thead > tr > th {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 731, ../../sass/main2.scss */
+/* line 744, ../../sass/main2.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -775,7 +789,7 @@ footer .table > thead > tr > th {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 748, ../../sass/main2.scss */
+/* line 761, ../../sass/main2.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -789,7 +803,7 @@ footer .table > thead > tr > th {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 761, ../../sass/main2.scss */
+/* line 774, ../../sass/main2.scss */
 .invisible {
   visibility: hidden;
 }
@@ -805,7 +819,7 @@ footer .table > thead > tr > th {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 778, ../../sass/main2.scss */
+/* line 791, ../../sass/main2.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -814,7 +828,7 @@ footer .table > thead > tr > th {
   /* 2 */
 }
 
-/* line 783, ../../sass/main2.scss */
+/* line 796, ../../sass/main2.scss */
 .clearfix:after {
   clear: both;
 }
@@ -823,7 +837,7 @@ footer .table > thead > tr > th {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 792, ../../sass/main2.scss */
+/* line 805, ../../sass/main2.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -844,7 +858,7 @@ footer .table > thead > tr > th {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 819, ../../sass/main2.scss */
+  /* line 832, ../../sass/main2.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -853,18 +867,18 @@ footer .table > thead > tr > th {
     text-shadow: none !important;
   }
 
-  /* line 827, ../../sass/main2.scss */
+  /* line 840, ../../sass/main2.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 831, ../../sass/main2.scss */
+  /* line 844, ../../sass/main2.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 835, ../../sass/main2.scss */
+  /* line 848, ../../sass/main2.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -872,33 +886,33 @@ footer .table > thead > tr > th {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 845, ../../sass/main2.scss */
+  /* line 858, ../../sass/main2.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 850, ../../sass/main2.scss */
+  /* line 863, ../../sass/main2.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 855, ../../sass/main2.scss */
+  /* line 868, ../../sass/main2.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 860, ../../sass/main2.scss */
+  /* line 873, ../../sass/main2.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 864, ../../sass/main2.scss */
+  /* line 877, ../../sass/main2.scss */
   img {
     max-width: 100% !important;
   }
@@ -907,7 +921,7 @@ footer .table > thead > tr > th {
     margin: 0.5cm;
 }
 
-  /* line 874, ../../sass/main2.scss */
+  /* line 887, ../../sass/main2.scss */
   p,
   h2,
   h3 {
@@ -915,7 +929,7 @@ footer .table > thead > tr > th {
     widows: 3;
   }
 
-  /* line 880, ../../sass/main2.scss */
+  /* line 893, ../../sass/main2.scss */
   h2,
   h3 {
     page-break-after: avoid;
