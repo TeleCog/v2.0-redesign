@@ -46,12 +46,7 @@
 
 <body class="custom-scroll-bar">
 
-
-    <!-- HERO -->
-
-    <div class="hero-container">
-
-        <!-- MAIN MAV -->
+    <!-- MAIN MAV -->
 
         <nav class="navbar navbar-default" role="navigation">
             <div class="container">
@@ -79,17 +74,23 @@
 
         <!-- END MAIN MAV -->
 
+    <!-- HERO -->
+
+    <div class="hero-container">
+
+        
+
         <img src="static/img/herotable.png" class="hero-img">
 
         <!-- CAROUSEL -->
 
-        <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+        <div id="carousel-example-generic" class="carousel slide " data-ride="carousel">
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
                     <img src="static/img/herocarpet.jpg" alt="">
-                    <div class="carousel-caption">
+                    <div class="carousel-caption ">
                         <h1>TALK TO A </h1>
                         <h1>FINANCIAL PROFESSIONAL</h1>
                         <h1>LIVE FROM YOUR HOME</h1>
@@ -126,7 +127,7 @@
 
     <!-- TAKE PERSONAL FINANCE  -->
 
-    <section id="test" class="talk-personal">
+    <section id="header-trigger" class="talk-personal">
 
         <h2>TALK PERSONAL FINANCE,</h2>
         <h2>WITH AN ACTUAL PERSON — NOT A COMPUTER</h2>
@@ -200,14 +201,17 @@
         <ul class="row">
             <li class="col-sm-4">
                 <img src="static/img/pens.png" class="pens">
+                <h4>Step 1</h4>
                 <p>Click through a few questions and we'll ﬁnd the ﬁnancial professional that's right for you.</p>
             </li>
             <li class="col-sm-4" >
                 <img src="static/img/glasses.png" class="glasses">
+                <h4>Step 2</h4>
                 <p>Talk to any ﬁnancial professional for free, with no obligation. We won't share your information.</p>
             </li>
             <li class="col-sm-4">
                 <img src="static/img/coffee.png">
+                <h4>Step 3</h4>
                 <p>There's no software to use, no forms to ﬁll out — we do all the work, so sit back and relax.</p>
             </li>
         </ul>
@@ -262,7 +266,7 @@
         <img src="static/img/camera.png">
         <h2>WE'RE KIND OF A BIG DEAL</h2>
         <h4>Connecting ﬁnancial professionals and clients does not sound very cool — </h4>
-        <h4>but Livewire is making it cool, by making it delightful.</h4>
+        <h4 class="second-line">but Livewire is making it cool, by making it delightful.</h4>
         <img src="static/img/press.jpg" class="press img-responsive">
     </section >
 
@@ -275,11 +279,11 @@
                 <div class="tweet-container">
                     <img src="static/img/twitter-icon.png" class="twitter-icon">
                     <a href="" class="twitter-link" class="twitter-link" target="_blank">@handlename</a>
-                    <p>“Lorem ipsum dolor sit amet,orem ipsum dolor sit amet,orem ipsum dolor sit amet, ,orem ipsum dolor sit amet" </p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus."</p>
                     <h5>Shelly H</h5>
                     <h6>Small Business Owner</h6>
                 </div>
-                <img src="static/img/tweet-img.png">
+                <img src="static/img/tweet-img.png" class="twitter-user-img">
             </li>
             <li class="col-sm-4">
                 <div class="tweet-container">
@@ -289,37 +293,74 @@
                     <h5>Shelly H</h5>
                     <h6>Small Business Owner</h6>
                 </div>
-                <img src="static/img/tweet-img.png">
+                <img src="static/img/tweet-img.png" class="twitter-user-img">
             </li>
             <li class="col-sm-4">
                 <div class="tweet-container">
                     <img src="static/img/twitter-icon.png" class="twitter-icon">
                     <a href="" class="twitter-link" class="twitter-link" target="_blank">@handlename</a>
-                    <p>“Lorem ipsum dolor sit amet,orem ipsum dolor sit amet,orem ipsum dolor sit amet, ,orem ipsum dolor sit amet" </p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus."</p>
                     <h5>Shelly H</h5>
                     <h6>Small Business Owner</h6>
                 </div>
-                <img src="static/img/tweet-img.png">
+                <img src="static/img/tweet-img.png" class="twitter-user-img">
             </li>
         </ul>
     </section >
 
-    <section class="big-deal">
+    <section class="where-is">
 
         <img src="static/img/compass.png">
         <h2>WHERE IS LIVEWIRE?</h2>
         <h4>We're anywhere you have an internet connection. Finance and tax has local implications. </h4>
-        <h4>Learn more about how far your dollar goes and how it's taxed in the following states:</h4>
-        <img src="static/img/states.png" class="press img-responsive">
+        <h4 class="second-line">Learn more about how far your dollar goes and how it's taxed in the following states:</h4>
+        <table class="table">
+                <tr>
+                    <td ><a href="#">Alabama</a></td>
+                    <td ><a href="#">Hawaii</a></td>
+                    <td ><a href="#">Massachusetts</a></td>
+                </tr>
+                <tr>
+                    <td ><a href="#">Alabama</a></td>
+                    <td ><a href="#">Hawaii</a></td>
+                    <td ><a href="#">Massachusetts</a></td>
+                </tr>
+                <tr>
+                    <td ><a href="#">Alabama</a></td>
+                    <td ><a href="#">Hawaii</a></td>
+                    <td ><a href="#">Massachusetts</a></td>
+                </tr>
+            </table>
     </section >
 
-    <footer>
-        <div class="footer-container">
+    <div class="header-fixed">
+        <div class="header-fixed-container">
             <h2>FIND ME A:</h2>
             <a href="#" class="btn btn-primary left">Tax Preparer / <br> Accountant</a>
             <!-- <span class="or">or</span> -->
             <a href="#" class="btn btn-primary right">Financial <br> Planner</a>
         </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2014 LIVEWIRE. All Rights Reserved.</p>
+        <table class="table">
+                <tr>
+                    <td ><a href="#">link</a></td>
+                    <td ><a href="#">link</a></td>
+                    <td ><a href="#">link</a></td>
+                </tr>
+                <tr>
+                    <td ><a href="#">link</a></td>
+                    <td ><a href="#">link</a></td>
+                    <td ><a href="#">link</a></td>
+                </tr>
+                <tr>
+                    <td ><a href="#">link</a></td>
+                    <td ><a href="#">link</a></td>
+                    <td ><a href="#">link</a></td>
+                </tr>
+            </table>
     </footer>
 
 

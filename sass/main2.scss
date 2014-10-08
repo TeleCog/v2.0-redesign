@@ -259,6 +259,15 @@ a.message-btn.btn {
     }
 }
 
+.nav a {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    font-weight: 900;
+}
+
 
 // HERO UNIT
 
@@ -330,6 +339,12 @@ body,
     display: inline-block;
     margin-left: 4px;
     margin-right: 4px;
+    color: $purple;
+    text-shadow: none;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
 }
 
 
@@ -342,6 +357,7 @@ section {
 
 section h2 {
     margin-top: 0;
+    margin-bottom: 5px;
 }
 
 section h4 {
@@ -350,6 +366,7 @@ section h4 {
 
 h4.second-line {
     margin-top: 10px;
+    margin-top: -10px;
 }
 
 
@@ -400,7 +417,7 @@ ul {
 }
 
 .fp-list h4, .fp-list h3 {
-    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    text-shadow: 0 1px 8px rgba(0,0,0,.8);
 }
 
 
@@ -413,6 +430,11 @@ ul {
 
 .how-to-livewire img {
     margin-bottom: 20px;
+}
+
+.how-to-livewire p {
+    max-width: 240px;
+    margin: 0 auto;
 }
 
 img.pens {
@@ -432,7 +454,7 @@ img.glasses {
   height: 600px;
 }
 
-.makes-it-easy li h4 {
+.makes-it-easy li h4, .how-to-livewire li h4 {
     font-weight: 700;
     font-size: 20px;
 }
@@ -496,6 +518,13 @@ img.devices {
     color: $gold;
 }
 
+.people-are-talking h6 {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
 .people-are-talking h2 {
     margin-bottom: 60px;
 }
@@ -522,11 +551,17 @@ img.devices {
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    height: 330px;
+    position: relative;
 }
 
 .people-are-talking h5 {
     font-size: 18px;
     margin-top: 20px;
+    position: absolute;
+    bottom: 36px;
+    left: 0;
+    right: 0;
 }
 
 .people-are-talking h6 {
@@ -572,17 +607,35 @@ img.devices {
     border-width: 15px;
   }
 
+  .twitter-user-img {
+    @include border-radius(50%);
+    border: 2px solid $gold;
+  }
 
-// FOOTER 
+// WHERE IS LIVEWIRE
 
-footer {
+.where-is .table {
+    max-width: 640px;
+    margin: 70px auto 0 auto;
+    font-size: 18px;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    border-top: none;
+    width: 200px;
+    height: 48px;
+}
+
+// STATIC HEADER 
+
+.header-fixed {
     background-color: #EFEFEF;
     @include breakpoint(mobile){
         padding-bottom: 20px;
     }
 }
 
-footer h2 {
+.header-fixed h2 {
     display: inline-block;
     margin: 0;
     line-height: 80px;
@@ -593,7 +646,7 @@ footer h2 {
     }
 }
 
-footer a {
+.header-fixed a {
     margin-top: -14px;
     margin-right: 20px;
     @include breakpoint(mobile){
@@ -602,7 +655,7 @@ footer a {
     }
 }
 
-.footer-container {
+.header-fixed-container {
     text-align: center;
 }
 
@@ -613,6 +666,30 @@ footer a {
     @include breakpoint(mobile){
 
     }
+}
+
+
+// FOOTER
+
+footer {
+    background-color: $grey2;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer a, footer a:hover {
+    color: white;
+}
+
+footer .table {
+    width: 60%;
+    margin: 20px auto;
+}
+
+footer .table>thead>tr>th {
+    height: 0;
 }
 
 /* ==========================================================================
