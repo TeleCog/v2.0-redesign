@@ -243,6 +243,7 @@ a.message-btn.btn {
 
 .navbar {
     border-radius: 0;
+    z-index: 99999;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -279,7 +280,7 @@ a.message-btn.btn {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 999999;
+    z-index: 9999;
     height: 100%;
 }
 
@@ -367,7 +368,7 @@ body,
     position: absolute;
     top: 182px;
     right: 203px;
-    z-index: 9999;
+    z-index: 999;
     font-weight: 900;
 }
 

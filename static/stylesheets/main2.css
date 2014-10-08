@@ -213,63 +213,64 @@ a.message-btn.btn {
 /* line 244, ../../sass/main2.scss */
 .navbar {
   border-radius: 0;
+  z-index: 99999;
 }
 
-/* line 248, ../../sass/main2.scss */
+/* line 249, ../../sass/main2.scss */
 .navbar-default .navbar-nav > li > a {
   color: #454c64;
 }
 
-/* line 252, ../../sass/main2.scss */
+/* line 253, ../../sass/main2.scss */
 .navbar-nav.navbar-right:last-child {
   margin-right: 0;
 }
 
 @media (max-width: 768px) {
-  /* line 256, ../../sass/main2.scss */
+  /* line 257, ../../sass/main2.scss */
   .nav > li {
     text-align: right;
   }
 }
 
-/* line 262, ../../sass/main2.scss */
+/* line 263, ../../sass/main2.scss */
 .nav a {
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
 }
 
-/* line 267, ../../sass/main2.scss */
+/* line 268, ../../sass/main2.scss */
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   font-weight: 900;
 }
 
-/* line 274, ../../sass/main2.scss */
+/* line 275, ../../sass/main2.scss */
 .hero-container {
   position: relative;
 }
 
-/* line 278, ../../sass/main2.scss */
+/* line 279, ../../sass/main2.scss */
 .hero-img {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 999999;
+  z-index: 9999;
   height: 100%;
 }
 
-/* line 286, ../../sass/main2.scss */
+/* line 287, ../../sass/main2.scss */
 .carousel {
   margin-top: -70px;
 }
 
-/* line 290, ../../sass/main2.scss */
+/* line 291, ../../sass/main2.scss */
 .carousel-caption h1, .cta-container h1 {
   margin: 0;
   font-size: 32px;
   text-shadow: none;
 }
 
-/* line 296, ../../sass/main2.scss */
+/* line 297, ../../sass/main2.scss */
 .carousel-caption p {
   color: #454c64;
   text-shadow: none;
@@ -278,25 +279,25 @@ a.message-btn.btn {
   margin-top: 16px;
 }
 
-/* line 304, ../../sass/main2.scss */
+/* line 305, ../../sass/main2.scss */
 .carousel-caption {
   top: 20%;
   right: -300px;
 }
 
-/* line 309, ../../sass/main2.scss */
+/* line 310, ../../sass/main2.scss */
 .carousel-fade .carousel-inner .item {
   opacity: 0;
   -webkit-transition-property: opacity;
   transition-property: opacity;
 }
 
-/* line 314, ../../sass/main2.scss */
+/* line 315, ../../sass/main2.scss */
 .carousel-fade .carousel-inner .active {
   opacity: 1;
 }
 
-/* line 318, ../../sass/main2.scss */
+/* line 319, ../../sass/main2.scss */
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   left: 0;
@@ -304,18 +305,18 @@ a.message-btn.btn {
   z-index: 1;
 }
 
-/* line 324, ../../sass/main2.scss */
+/* line 325, ../../sass/main2.scss */
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
   opacity: 1;
 }
 
-/* line 327, ../../sass/main2.scss */
+/* line 328, ../../sass/main2.scss */
 .carousel-fade .carousel-control {
   z-index: 2;
 }
 
-/* line 334, ../../sass/main2.scss */
+/* line 335, ../../sass/main2.scss */
 html,
 body,
 .carousel,
@@ -324,7 +325,7 @@ body,
   height: 100%;
 }
 
-/* line 338, ../../sass/main2.scss */
+/* line 339, ../../sass/main2.scss */
 .or {
   display: inline-block;
   margin-left: 4px;
@@ -333,12 +334,12 @@ body,
   text-shadow: none;
 }
 
-/* line 346, ../../sass/main2.scss */
+/* line 347, ../../sass/main2.scss */
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
   width: 100%;
 }
 
-/* line 350, ../../sass/main2.scss */
+/* line 351, ../../sass/main2.scss */
 .cta-container {
   position: absolute;
   top: 130px;
@@ -347,7 +348,7 @@ body,
   text-align: center;
 }
 
-/* line 358, ../../sass/main2.scss */
+/* line 359, ../../sass/main2.scss */
 .cta-container p {
   margin-top: 60px;
   color: #454c64;
@@ -356,44 +357,44 @@ body,
   font-family: 'Roboto Slab', serif;
 }
 
-/* line 366, ../../sass/main2.scss */
+/* line 367, ../../sass/main2.scss */
 .carousel-caption2 {
   position: absolute;
   top: 182px;
   right: 203px;
-  z-index: 9999;
+  z-index: 999;
   font-weight: 900;
 }
 
-/* line 374, ../../sass/main2.scss */
+/* line 375, ../../sass/main2.scss */
 .carousel-caption2.office {
   right: 188px;
 }
 
-/* line 381, ../../sass/main2.scss */
+/* line 382, ../../sass/main2.scss */
 section {
   padding: 100px 30px;
   text-align: center;
 }
 
-/* line 386, ../../sass/main2.scss */
+/* line 387, ../../sass/main2.scss */
 section h2, .livewire-saves h2 {
   margin-top: 0;
   margin-bottom: 5px;
 }
 
-/* line 391, ../../sass/main2.scss */
+/* line 392, ../../sass/main2.scss */
 section h4 {
   margin-top: 20px;
 }
 
-/* line 395, ../../sass/main2.scss */
+/* line 396, ../../sass/main2.scss */
 h4.second-line {
   margin-top: 10px;
   margin-top: -10px;
 }
 
-/* line 403, ../../sass/main2.scss */
+/* line 404, ../../sass/main2.scss */
 .talk-personal {
   background: url(../img/gridpaperbg.jpg) no-repeat center center;
   -webkit-background-size: cover;
@@ -402,23 +403,23 @@ h4.second-line {
   background-size: cover;
 }
 
-/* line 414, ../../sass/main2.scss */
+/* line 415, ../../sass/main2.scss */
 ul {
   padding: 0;
 }
 
-/* line 418, ../../sass/main2.scss */
+/* line 419, ../../sass/main2.scss */
 .fp-list {
   text-align: center;
 }
 
-/* line 422, ../../sass/main2.scss */
+/* line 423, ../../sass/main2.scss */
 .thumbnail {
   border: none;
   margin-bottom: 0;
 }
 
-/* line 427, ../../sass/main2.scss */
+/* line 428, ../../sass/main2.scss */
 .thumbnail .caption {
   position: absolute;
   bottom: 20px;
@@ -429,64 +430,64 @@ ul {
   right: 0;
 }
 
-/* line 437, ../../sass/main2.scss */
+/* line 438, ../../sass/main2.scss */
 .fp-list h3 {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   margin-bottom: 0;
 }
 
-/* line 443, ../../sass/main2.scss */
+/* line 444, ../../sass/main2.scss */
 .fp-list h4 {
   margin-top: 4px;
   font-size: 14px;
 }
 
-/* line 448, ../../sass/main2.scss */
+/* line 449, ../../sass/main2.scss */
 .fp-list h4, .fp-list h3 {
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
 }
 
-/* line 456, ../../sass/main2.scss */
+/* line 457, ../../sass/main2.scss */
 .how-to-livewire ul, .makes-it-easy ul {
   margin: 50px auto 0 auto;
   max-width: 1024px;
 }
 
-/* line 461, ../../sass/main2.scss */
+/* line 462, ../../sass/main2.scss */
 .how-to-livewire img {
   margin-bottom: 20px;
 }
 
-/* line 465, ../../sass/main2.scss */
+/* line 466, ../../sass/main2.scss */
 .how-to-livewire p {
   max-width: 240px;
   margin: 0 auto;
 }
 
-/* line 470, ../../sass/main2.scss */
+/* line 471, ../../sass/main2.scss */
 .makes-it-easy p {
   max-width: 260px;
   margin: 0 auto;
 }
 
-/* line 475, ../../sass/main2.scss */
+/* line 476, ../../sass/main2.scss */
 .how-to-livewire p, .makes-it-easy p {
   max-width: 240px;
   margin: 0 auto;
 }
 
-/* line 480, ../../sass/main2.scss */
+/* line 481, ../../sass/main2.scss */
 img.pens {
   margin-top: 53px;
 }
 
-/* line 484, ../../sass/main2.scss */
+/* line 485, ../../sass/main2.scss */
 img.glasses {
   margin-top: 52px;
 }
 
-/* line 488, ../../sass/main2.scss */
+/* line 489, ../../sass/main2.scss */
 .vc-ipad-bkg {
   background: url(../img/mobilefacetoface.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -496,78 +497,78 @@ img.glasses {
   height: 600px;
 }
 
-/* line 497, ../../sass/main2.scss */
+/* line 498, ../../sass/main2.scss */
 .makes-it-easy li h4, .how-to-livewire li h4 {
   font-weight: 700;
   font-size: 20px;
 }
 
-/* line 502, ../../sass/main2.scss */
+/* line 503, ../../sass/main2.scss */
 .makes-it-easy li {
   padding: 0 40px;
 }
 
-/* line 506, ../../sass/main2.scss */
+/* line 507, ../../sass/main2.scss */
 img.devices {
   margin-top: 60px;
 }
 
-/* line 514, ../../sass/main2.scss */
+/* line 515, ../../sass/main2.scss */
 .livewire-saves, .avg-tax-fees {
   height: 840px;
   text-align: center;
 }
 
-/* line 519, ../../sass/main2.scss */
+/* line 520, ../../sass/main2.scss */
 .livewire-saves {
   background-color: #454c64;
   color: #EFEFEF;
   padding: 240px 60px 0 60px;
 }
 
-/* line 525, ../../sass/main2.scss */
+/* line 526, ../../sass/main2.scss */
 .livewire-saves img {
   margin-bottom: 20px;
 }
 
-/* line 529, ../../sass/main2.scss */
+/* line 530, ../../sass/main2.scss */
 .livewire-saves h2 {
   color: #EFEFEF;
 }
 
-/* line 533, ../../sass/main2.scss */
+/* line 534, ../../sass/main2.scss */
 .livewire-saves p {
   line-height: 30px;
 }
 
-/* line 537, ../../sass/main2.scss */
+/* line 538, ../../sass/main2.scss */
 .avg-tax-fees {
   background-color: #EFEFEF;
   padding: 60px 50px 0 50px;
   color: #4F4F4F;
 }
 
-/* line 543, ../../sass/main2.scss */
+/* line 544, ../../sass/main2.scss */
 .avg-tax-fees img {
   margin-top: 40px;
 }
 
-/* line 547, ../../sass/main2.scss */
+/* line 548, ../../sass/main2.scss */
 .press {
   margin: 40px auto 0 auto;
 }
 
-/* line 554, ../../sass/main2.scss */
+/* line 555, ../../sass/main2.scss */
 .people-are-talking {
   background-color: #454c64;
 }
 
-/* line 558, ../../sass/main2.scss */
+/* line 559, ../../sass/main2.scss */
 .people-are-talking h2, .people-are-talking h6 {
   color: #c0a888;
 }
 
-/* line 562, ../../sass/main2.scss */
+/* line 563, ../../sass/main2.scss */
 .people-are-talking h6 {
   position: absolute;
   bottom: 10px;
@@ -575,28 +576,28 @@ img.devices {
   right: 0;
 }
 
-/* line 569, ../../sass/main2.scss */
+/* line 570, ../../sass/main2.scss */
 .people-are-talking h2 {
   margin-bottom: 60px;
 }
 
-/* line 573, ../../sass/main2.scss */
+/* line 574, ../../sass/main2.scss */
 .people-are-talking a {
   color: #5EA9DD;
 }
 
-/* line 577, ../../sass/main2.scss */
+/* line 578, ../../sass/main2.scss */
 .twitter-icon, .twitter-link {
   display: block;
   margin: 0 auto;
 }
 
-/* line 582, ../../sass/main2.scss */
+/* line 583, ../../sass/main2.scss */
 .twitter-icon {
   margin-bottom: 4px;
 }
 
-/* line 586, ../../sass/main2.scss */
+/* line 587, ../../sass/main2.scss */
 .tweet-container {
   background-color: white;
   -webkit-border-radius: 4px;
@@ -614,7 +615,7 @@ img.devices {
   position: relative;
 }
 
-/* line 599, ../../sass/main2.scss */
+/* line 600, ../../sass/main2.scss */
 .people-are-talking h5 {
   font-size: 18px;
   margin-top: 20px;
@@ -624,14 +625,14 @@ img.devices {
   right: 0;
 }
 
-/* line 608, ../../sass/main2.scss */
+/* line 609, ../../sass/main2.scss */
 .people-are-talking h6 {
   font-size: 14px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
 }
 
-/* line 614, ../../sass/main2.scss */
+/* line 615, ../../sass/main2.scss */
 .tri-down {
   /* Styling block element, not required */
   position: relative;
@@ -642,7 +643,7 @@ img.devices {
 }
 
 /* Required for Down Triangle */
-/* line 625, ../../sass/main2.scss */
+/* line 626, ../../sass/main2.scss */
 .tri-down:before, .tri-down:after {
   content: "";
   position: absolute;
@@ -654,7 +655,7 @@ img.devices {
 }
 
 /* Stroke */
-/* line 636, ../../sass/main2.scss */
+/* line 637, ../../sass/main2.scss */
 .tri-down:before {
   bottom: -18px;
   left: 149px;
@@ -663,7 +664,7 @@ img.devices {
 }
 
 /* Fill */
-/* line 644, ../../sass/main2.scss */
+/* line 645, ../../sass/main2.scss */
 .tri-down:after {
   bottom: -15px;
   left: 152px;
@@ -671,7 +672,7 @@ img.devices {
   border-width: 15px;
 }
 
-/* line 651, ../../sass/main2.scss */
+/* line 652, ../../sass/main2.scss */
 .twitter-user-img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -681,32 +682,32 @@ img.devices {
   border: 2px solid #c0a888;
 }
 
-/* line 658, ../../sass/main2.scss */
+/* line 659, ../../sass/main2.scss */
 .where-is .table {
   max-width: 640px;
   margin: 70px auto 0 auto;
   font-size: 18px;
 }
 
-/* line 664, ../../sass/main2.scss */
+/* line 665, ../../sass/main2.scss */
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
   border-top: none;
   width: 200px;
   height: 48px;
 }
 
-/* line 672, ../../sass/main2.scss */
+/* line 673, ../../sass/main2.scss */
 .header-fixed {
   background-color: #EFEFEF;
 }
 @media (max-width: 768px) {
-  /* line 672, ../../sass/main2.scss */
+  /* line 673, ../../sass/main2.scss */
   .header-fixed {
     padding-bottom: 20px;
   }
 }
 
-/* line 679, ../../sass/main2.scss */
+/* line 680, ../../sass/main2.scss */
 .header-fixed h2 {
   display: inline-block;
   margin: 0;
@@ -714,38 +715,38 @@ img.devices {
   margin-right: 30px;
 }
 @media (max-width: 768px) {
-  /* line 679, ../../sass/main2.scss */
+  /* line 680, ../../sass/main2.scss */
   .header-fixed h2 {
     display: block;
     line-height: 50px;
   }
 }
 
-/* line 690, ../../sass/main2.scss */
+/* line 691, ../../sass/main2.scss */
 .header-fixed a {
   margin-top: -14px;
   margin-right: 20px;
 }
 @media (max-width: 768px) {
-  /* line 690, ../../sass/main2.scss */
+  /* line 691, ../../sass/main2.scss */
   .header-fixed a {
     margin: 0 auto;
   }
 }
 
-/* line 699, ../../sass/main2.scss */
+/* line 700, ../../sass/main2.scss */
 .header-fixed-container {
   text-align: center;
 }
 
-/* line 703, ../../sass/main2.scss */
+/* line 704, ../../sass/main2.scss */
 .fixed {
   position: fixed;
   width: 100%;
   bottom: 0;
 }
 
-/* line 715, ../../sass/main2.scss */
+/* line 716, ../../sass/main2.scss */
 footer {
   background-color: #454c64;
   color: white;
@@ -754,18 +755,18 @@ footer {
   font-family: 'Raleway', sans-serif;
 }
 
-/* line 723, ../../sass/main2.scss */
+/* line 724, ../../sass/main2.scss */
 footer a, footer a:hover {
   color: white;
 }
 
-/* line 727, ../../sass/main2.scss */
+/* line 728, ../../sass/main2.scss */
 footer .table {
   width: 50%;
   margin: 20px auto;
 }
 
-/* line 732, ../../sass/main2.scss */
+/* line 733, ../../sass/main2.scss */
 footer .table > thead > tr > th, footer .table > thead > tr > td {
   height: 0px;
 }
@@ -776,7 +777,7 @@ footer .table > thead > tr > th, footer .table > thead > tr > td {
 /*
  * Image replacement
  */
-/* line 744, ../../sass/main2.scss */
+/* line 745, ../../sass/main2.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -785,7 +786,7 @@ footer .table > thead > tr > th, footer .table > thead > tr > td {
   *text-indent: -9999px;
 }
 
-/* line 752, ../../sass/main2.scss */
+/* line 753, ../../sass/main2.scss */
 .ir:before {
   content: "";
   display: block;
@@ -796,7 +797,7 @@ footer .table > thead > tr > th, footer .table > thead > tr > td {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 763, ../../sass/main2.scss */
+/* line 764, ../../sass/main2.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -805,7 +806,7 @@ footer .table > thead > tr > th, footer .table > thead > tr > td {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 772, ../../sass/main2.scss */
+/* line 773, ../../sass/main2.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -821,7 +822,7 @@ footer .table > thead > tr > th, footer .table > thead > tr > td {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 789, ../../sass/main2.scss */
+/* line 790, ../../sass/main2.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -835,7 +836,7 @@ footer .table > thead > tr > th, footer .table > thead > tr > td {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 802, ../../sass/main2.scss */
+/* line 803, ../../sass/main2.scss */
 .invisible {
   visibility: hidden;
 }
@@ -851,7 +852,7 @@ footer .table > thead > tr > th, footer .table > thead > tr > td {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 819, ../../sass/main2.scss */
+/* line 820, ../../sass/main2.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -860,7 +861,7 @@ footer .table > thead > tr > th, footer .table > thead > tr > td {
   /* 2 */
 }
 
-/* line 824, ../../sass/main2.scss */
+/* line 825, ../../sass/main2.scss */
 .clearfix:after {
   clear: both;
 }
@@ -869,7 +870,7 @@ footer .table > thead > tr > th, footer .table > thead > tr > td {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 833, ../../sass/main2.scss */
+/* line 834, ../../sass/main2.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -890,7 +891,7 @@ footer .table > thead > tr > th, footer .table > thead > tr > td {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 860, ../../sass/main2.scss */
+  /* line 861, ../../sass/main2.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -899,18 +900,18 @@ footer .table > thead > tr > th, footer .table > thead > tr > td {
     text-shadow: none !important;
   }
 
-  /* line 868, ../../sass/main2.scss */
+  /* line 869, ../../sass/main2.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 872, ../../sass/main2.scss */
+  /* line 873, ../../sass/main2.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 876, ../../sass/main2.scss */
+  /* line 877, ../../sass/main2.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -918,33 +919,33 @@ footer .table > thead > tr > th, footer .table > thead > tr > td {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 886, ../../sass/main2.scss */
+  /* line 887, ../../sass/main2.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 891, ../../sass/main2.scss */
+  /* line 892, ../../sass/main2.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 896, ../../sass/main2.scss */
+  /* line 897, ../../sass/main2.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 901, ../../sass/main2.scss */
+  /* line 902, ../../sass/main2.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 905, ../../sass/main2.scss */
+  /* line 906, ../../sass/main2.scss */
   img {
     max-width: 100% !important;
   }
@@ -953,7 +954,7 @@ footer .table > thead > tr > th, footer .table > thead > tr > td {
     margin: 0.5cm;
 }
 
-  /* line 915, ../../sass/main2.scss */
+  /* line 916, ../../sass/main2.scss */
   p,
   h2,
   h3 {
@@ -961,7 +962,7 @@ footer .table > thead > tr > th, footer .table > thead > tr > td {
     widows: 3;
   }
 
-  /* line 921, ../../sass/main2.scss */
+  /* line 922, ../../sass/main2.scss */
   h2,
   h3 {
     page-break-after: avoid;
