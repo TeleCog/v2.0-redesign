@@ -21,7 +21,7 @@ $('.carousel').carousel({
 
 // SCROLLING EFFECT VIA WAYPOINTS
 
-// $('#header-trigger').waypoint(function() {
-// 	console.log('test');
-// 	$(".header-fixed").toggleClass('fixed animated fadeInUpBig');
-// });
+$('#wayway').waypoint(function() {
+	console.log('test');
+	$(".header-fixed").toggleClass('fixed animated fadeInUpBig');
+});
