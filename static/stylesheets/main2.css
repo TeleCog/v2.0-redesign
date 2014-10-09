@@ -20,7 +20,7 @@ textarea {
 /* line 34, ../../sass/main2.scss */
 html, body {
   width: 100%;
-  height: 100%;
+  /*height: 100%;*/
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
@@ -317,8 +317,7 @@ a.message-btn.btn {
 }
 
 /* line 335, ../../sass/main2.scss */
-html,
-body,
+
 .carousel,
 .carousel-inner,
 .carousel-inner .item {
