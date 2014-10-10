@@ -20,6 +20,10 @@ textarea {
 /* line 34, ../../sass/main2.scss */
 html, body {
   width: 100%;
+<<<<<<< HEAD
+=======
+  /*height: 100%;*/
+>>>>>>> FETCH_HEAD
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
@@ -356,7 +360,12 @@ a.message-btn.btn {
   z-index: 2;
 }
 
+<<<<<<< HEAD
 /* line 361, ../../sass/main2.scss */
+=======
+/* line 335, ../../sass/main2.scss */
+
+>>>>>>> FETCH_HEAD
 .carousel,
 .carousel-inner,
 .carousel-inner .item {
