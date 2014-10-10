@@ -380,6 +380,9 @@ a.message-btn.btn {
     right: 90px;
     z-index: 999;
     text-align: center;
+    @include breakpoint(large){
+        right: 70px;
+    }
 }
 
 .cta-container p {
@@ -396,10 +399,16 @@ a.message-btn.btn {
     right: 203px;
     z-index: 999;
     font-weight: 900;
+    @include breakpoint(large){
+        right: 178px;
+    }
 }
 
 .carousel-caption2.office {
     right: 188px;
+    @include breakpoint(large){
+        right: 172px;
+    }
 }
 
 
