@@ -22,6 +22,39 @@ $('.carousel').carousel({
 // SCROLLING EFFECT VIA WAYPOINTS
 
 $('#header-trigger').waypoint(function() {
-	console.log('test');
 	$(".header-fixed").toggleClass('fixed animated fadeInDownBig');
 });
+
+$('#profile-cover1').waypoint(function() {
+	$("img.profile-cover1").addClass('covered animated fadeInUp');
+	$(".caption1").addClass('covered');
+});
+
+$('#profile-cover2').waypoint(function() {
+	$("img.profile-cover2").addClass('covered animated fadeInUp');
+	$(".caption2").addClass('covered');
+});
+
+$('#device-trigger').waypoint(function() {
+	$(".devices-container").addClass('device-moved');
+});
+
+$('#tweet-trigger').waypoint(function() {
+	$(".tweet-txt").addClass('animated fadeInUp show');
+});
+
+$('#chart-trigger').waypoint(function() {
+	$(".bars").addClass('animated fadeInUp show');
+});
+
+
+// FIXED HEADER SCROLL EFFECT
+
+$(".header-fixed-container a").click(function(event){
+		event.preventDefault();
+		var scrollDiv = $(this).attr('href');
+		$("html, body").animate({
+			scrollTop: $(scrollDiv).position().top
+		}, 900);
+	});
+

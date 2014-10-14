@@ -377,11 +377,11 @@ a.message-btn.btn {
 .cta-container {
     position: absolute;
     top: 130px;
-    right: 90px;
+    right: 66px;
     z-index: 999;
     text-align: center;
     @include breakpoint(large){
-        right: 70px;
+        right: 30px;
     }
 }
 
@@ -396,18 +396,18 @@ a.message-btn.btn {
 .carousel-caption2 {
     position: absolute;
     top: 182px;
-    right: 203px;
+    right: 176px;
     z-index: 999;
     font-weight: 900;
     @include breakpoint(large){
-        right: 178px;
+        right: 140px;
     }
 }
 
 .carousel-caption2.office {
-    right: 188px;
+    right: 164px;
     @include breakpoint(large){
-        right: 172px;
+        right: 128px;
     }
 }
 
@@ -491,9 +491,9 @@ ul {
     margin-bottom: 0;
 }
 
-.thumbnail .caption {
+.thumbnail .caption1, .thumbnail .caption2 {
     position: absolute;
-    bottom: 20px;
+    bottom: 4px;
     color: white;
     margin-left: auto;
     margin-right: auto;
@@ -505,15 +505,38 @@ ul {
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
     margin-bottom: 0;
+    -moz-transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
 }
 
 .fp-list h4 {
     margin-top: 4px;
     font-size: 14px;
+    -moz-transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
 }
 
 .fp-list h4, .fp-list h3 {
     text-shadow: 0 1px 8px rgba(0,0,0,.8);
+}
+
+.covered h4, .covered h3 {
+    text-shadow: none;
+    color: $gold;
+}
+
+img.profile-cover1, img.profile-cover2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 4px;
+    display: none;
+}
+
+img.profile-cover1.covered, img.profile-cover2.covered {
+    display: inline-block;
 }
 
 
@@ -572,8 +595,84 @@ img.glasses {
 
 img.devices {
     margin-top: 60px;
+    display: none;
+    @include breakpoint(mobile){
+        
+    }
 }
 
+.devices-container {
+    width: 704px;
+    height: 330px;
+    margin: 60px auto 0 auto;
+    position: relative;
+    @include breakpoint(mobile){
+        width: 260px;
+        height: 120px;
+    }
+}
+
+.devices-container .device {
+    position: absolute;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    -moz-transition: all .6s ease-out;
+    -webkit-transition: all .6s ease-out;
+    transition: all .6s ease-out;
+}
+
+.device-computer {
+    
+}
+
+.device-mobile {
+    z-index: 9;
+    bottom: 14px;
+}
+
+.device-ipad {
+    bottom: 14px;
+}
+
+.device-moved .device-computer {
+    left: -180px;
+    @include breakpoint(mobile){
+        left: -100px;
+    }
+}
+
+.device-moved .device-ipad {
+    right: -390px;
+    @include breakpoint(mobile){
+        right: -160px;
+    }
+}
+
+.device-moved .device-mobile {
+    right: -50px;
+    @include breakpoint(mobile){
+        right: -20px;
+    }
+}
+
+.devices-container .device-computer {
+    @include breakpoint(mobile){
+        width: 80%;
+    }
+}
+
+.devices-container .device-mobile {
+    @include breakpoint(mobile){
+        width: 14%;
+    }
+}
+
+.devices-container .device-ipad {
+    @include breakpoint(mobile){
+        width: 50%;
+    }
+}
 
 
 // SAVES AND FEES
@@ -608,11 +707,31 @@ img.devices {
 }
 
 .avg-tax-fees img {
-    margin-top: 40px;
+    
 }
 
 .press {
     margin: 40px auto 0 auto;
+}
+
+.chart-container {
+    width: 480px;
+    position: relative;
+    margin: 40px auto 0 auto;
+    overflow: hidden;
+}
+
+.chart-bkg {
+    width: 480px;
+    z-index: 9;
+}
+
+.bars {
+    position: absolute;
+    width: 466px;
+    left: 7px;
+    bottom: -9px;
+    display: none;
 }
 
 
@@ -659,8 +778,12 @@ img.devices {
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    height: 330px;
+    height: 360px;
     position: relative;
+    overflow: hidden;
+    @include breakpoint(x-large){
+        height: 330px;
+    }
 }
 
 .people-are-talking h5 {
@@ -678,46 +801,21 @@ img.devices {
     font-weight: 700;
 }
 
-.tri-down {
-
-    /* Styling block element, not required */
-    position: relative;
-    margin-bottom: 2em;
-    padding: 1em;
-    border-bottom: 2px solid $gold;
-    background: white;
-  }
-
-  /* Required for Down Triangle */
-  .tri-down:before, .tri-down:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-color: transparent;
-    border-bottom: 0;
-  }
-
-  /* Stroke */
-  .tri-down:before {
-    bottom: -18px;
-    left: 149px;
-    border-top-color: #c0a888;
-    border-width: 18px;
-  }
-
-  /* Fill */
-  .tri-down:after {
-    bottom: -15px;
-    left: 152px;
-    border-top-color: white;
-    border-width: 15px;
-  }
+.tweet-container p {
+    line-height: 26px;
+    @include breakpoint(x-large){
+        line-height: 32px;
+    }
+}
 
   .twitter-user-img {
     @include border-radius(50%);
     border: 2px solid $gold;
+  }
+
+  .tweet-txt {
+    display: none;
+    height: 80%;
   }
 
 // WHERE IS LIVEWIRE
@@ -771,6 +869,7 @@ img.devices {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 99;
     @include breakpoint(mobile){
 
     }
