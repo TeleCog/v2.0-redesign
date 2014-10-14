@@ -819,9 +819,9 @@ img.devices {
 @media (max-width: 768px) {
   /* line 752, ../../sass/main2.scss */
   .bars {
-    width: 230px;
-    left: 11px;
-    bottom: -2px;
+    width: 184px;
+    left: 33px;
+    bottom: -1px;
   }
 }
 
