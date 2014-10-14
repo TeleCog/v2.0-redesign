@@ -15,7 +15,8 @@ $("#show-more-recos").click (function (){
 // CAROUSEL
 
 $('.carousel').carousel({
-	interval: 3500
+	interval: 3500,
+	wrap: false
 });
 
 
@@ -26,12 +27,12 @@ $('#header-trigger').waypoint(function() {
 });
 
 $('#profile-cover1').waypoint(function() {
-	$("img.profile-cover1").addClass('covered animated fadeInUp');
+	$("img.profile-cover1").addClass('covered animated fadeIn');
 	$(".caption1").addClass('covered');
 });
 
 $('#profile-cover2').waypoint(function() {
-	$("img.profile-cover2").addClass('covered animated fadeInUp');
+	$("img.profile-cover2").addClass('covered animated fadeIn');
 	$(".caption2").addClass('covered');
 });
 

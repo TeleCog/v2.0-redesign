@@ -378,7 +378,7 @@ a.message-btn.btn {
     position: absolute;
     top: 130px;
     right: 66px;
-    z-index: 999;
+    z-index: 99999;
     text-align: center;
     @include breakpoint(large){
         right: 30px;
@@ -539,6 +539,22 @@ img.profile-cover1.covered, img.profile-cover2.covered {
     display: inline-block;
 }
 
+.animation2 {
+    -webkit-animation-delay:.2s;
+    -moz-animation-delay:.2s;
+    -ms-animation-delay:.2s;
+    -o-animation-delay:.2s;
+    animation-delay:.2s;
+}
+
+.animation3 {
+    -webkit-animation-delay:.4s;
+    -moz-animation-delay:.4s;
+    -ms-animation-delay:.4s;
+    -o-animation-delay:.4s;
+    animation-delay:.4s;
+}
+
 
 // HOW TO LIVEWIRE & MAKES IT EASY
 
@@ -639,6 +655,7 @@ img.devices {
     left: -180px;
     @include breakpoint(mobile){
         left: -100px;
+        bottom: 13px;
     }
 }
 
@@ -719,19 +736,35 @@ img.devices {
     position: relative;
     margin: 40px auto 0 auto;
     overflow: hidden;
+    @include breakpoint(mobile){
+        width: 250px;
+    }
 }
 
 .chart-bkg {
     width: 480px;
     z-index: 9;
+    @include breakpoint(mobile){
+        width: 250px;
+    }
 }
 
 .bars {
     position: absolute;
-    width: 466px;
-    left: 7px;
-    bottom: -9px;
+    width: 358px;
+    left: 60px;
+    bottom: -2px;
     display: none;
+    -webkit-animation-duration:1.5s;
+    -moz-animation-duration:1.5s;
+    -ms-animation-duration:1.5s;
+    -o-animation-duration:1.5s;
+    animation-duration:1.5s;
+    @include breakpoint(mobile){
+        width: 230px;
+        left: 11px;
+        bottom: -2px;
+    }
 }
 
 
