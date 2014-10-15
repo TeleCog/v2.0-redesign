@@ -503,7 +503,7 @@ ul {
 
 .fp-list h3 {
     font-family: 'Roboto Slab', serif;
-    font-weight: 300;
+    font-weight: 500;
     margin-bottom: 0;
     -moz-transition: all 1s linear;
     -webkit-transition: all 1s linear;
@@ -564,7 +564,7 @@ img.profile-cover1.covered, img.profile-cover2.covered {
     max-width: 1024px;
 }
 
-.how-to-livewire img {
+.how-to-livewire img, .makes-it-easy img {
     margin-bottom: 20px;
 }
 
@@ -583,7 +583,7 @@ img.profile-cover1.covered, img.profile-cover2.covered {
     margin: 0 auto;
 }
 
-img.pens {
+img.icons {
     margin-top: 53px;
 }
 
@@ -761,8 +761,8 @@ img.devices {
     -o-animation-duration:1.5s;
     animation-duration:1.5s;
     @include breakpoint(mobile){
-        width: 184px;
-        left: 33px;
+        width: 188px;
+        left: 30px;
         bottom: -1px;
     }
 }
@@ -882,6 +882,7 @@ img.devices {
         display: block;
         line-height: 40px;
         font-size: 18px;
+        margin-right: 0;
     }
 }
 
